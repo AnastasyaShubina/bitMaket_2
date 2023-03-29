@@ -1,0 +1,20 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name ${NGINX_HOST} www.${NGINX_HOST};
+
+    resolver 8.8.8.8;
+
+    location = / {
+        rewrite .* /index.html break;
+        root /frontend/;
+        index index.html break;
+        access_log off;
+    }
+
+    location / {
+        root /frontend/;
+        access_log off;
+    }
+}

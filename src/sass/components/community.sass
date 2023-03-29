@@ -1,0 +1,53 @@
+@use "~sass-rem" as rem
+@use "../config/helpers" as h
+
+.sectionCommunity
+    max-width: rem.convert(1376px)
+    position: relative
+    margin: auto
+    padding-bottom: rem.convert(123px)
+    &--bg
+        background: linear-gradient(135.49deg, rgba(255, 255, 255, 0.08) 17.98%, rgba(255, 255, 255, 0.02) 50.12%)
+        border-radius: 16px
+        position: absolute
+        width: 100%
+        height: 100%
+        z-index: -1
+        @media (max-width: h.$mediaMaxWidthMobil)
+            border-radius: rem.convert(0px)
+    &--header
+        text-align: center
+        padding-top: rem.convert(70px)
+        margin-bottom: rem.convert(46px)
+    &--container
+        max-width: rem.convert(808px)
+        margin: 0 auto
+        gap: rem.convert(7px)
+        justify-content: space-between
+        display: flex
+        padding: 0 16px  
+        &__item
+            background: linear-gradient(131.78deg, rgba(255, 255, 255, 0.07) 5.27%, rgba(255, 255, 255, 0) 54.31%)
+            border-radius: rem.convert(16px)
+            text-align: center
+            position: relative
+            width: rem.convert(232px)
+            padding: rem.convert(40px) 0
+            &:hover
+                .sectionCommunity--container__item--bg
+                    opacity: 1
+            &--bg
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                border-radius: rem.convert(16px)
+                opacity: 0
+                height: 100%
+                transition: h.$transition
+                z-index: -1
+                background: linear-gradient(286.99deg, #A02BFD 3.84%, #3069FE 81.67%), radial-gradient(114.41% 63.13% at 50% 113.13%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(128.18% 121.87% at 50% -9.37%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.01) 100%)
+                box-shadow: rem.convert(0px) rem.convert(4px) rem.convert(20px) rgba(78, 0, 249, 0.55), rem.convert(0px) rem.convert(9px) rem.convert(20px) rgba(33, 0, 104, 0.15), rem.convert(0px) rem.convert(4px) rem.convert(0px) rgba(255, 255, 255, 0.11), rem.convert(0px) rem.convert(9px) rem.convert(16px) rgba(0, 0, 0, 0.11), inset rem.convert(0px) rem.convert(-3px) rem.convert(0px) rgba(0, 0, 0, 0.06), inset rem.convert(0px) rem.convert(-3px) rem.convert(0px) rgba(0, 0, 0, 0.06)
+            &--img
+                width: rem.convert(41px)
+            &--label

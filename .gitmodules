@@ -1,0 +1,3 @@
+[submodule "src/templatesLanding"]
+	path = src/templatesLanding
+	url = https://github.com/Portify-app/templatesLanding

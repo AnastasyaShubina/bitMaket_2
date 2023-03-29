@@ -1,0 +1,11 @@
+mixin community(bg, ...items)
+    section.sectionCommunity#community
+        if bg==true
+            .sectionCommunity--bg
+        h3.sectionCommunity--header Community
+        .sectionCommunity--container
+            each item in items
+                a.sectionCommunity--container__item(href=item.link target="_blank")
+                    .sectionCommunity--container__item--bg
+                    img.lazyload.sectionCommunity--container__item--img(data-src=item.img loading="lazy")
+                    p.sectionCommunity--container__item--label=item.title

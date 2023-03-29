@@ -1,0 +1,113 @@
+mixin header( course, language, wallet, authorization, ...items)
+    .menuBurger.menu
+        img.lazyload.menuBurger--bg(data-src="./images/menu-bg.png" loading="lazy")
+        .menuBurger--wrapper
+            .menuBurger--menu
+                nav
+                    ul
+                        each item in items  
+                            if item.subFlag==true
+                                li.submenu
+                                    h4
+                                        span= item.name
+                                        img.menuBurger--menu__arrow(src="./images/arrow.svg")
+                                        ul
+                                            each sub in item.subMenu 
+                                                li
+                                                    h4
+                                                        a(href=sub.link).menuItem.text-14M= sub.name
+                            else 
+                                li
+                                    h4
+                                        a(href=item.link).menuItem= item.name                  
+            .menuBurger--footer 
+                if course==true
+                    .menuBurger--footer__curs.pfyCurs-js
+                        //- p.text-16M 1 $PFY = 5,84 USD
+                .menuBurger--footer__buttons
+                    if wallet==true
+                        #prepare
+                            .menuBurger--footer__wallet
+                                a.btn.btn--secondary#btn-connect
+                                    img.lazyload(data-src="./images/wallet.svg" loading="lazy" width="24" height="24")
+                                    span Connect wallet
+                        #connected(style="display:none")
+                            .menuBurger--footer__wallet
+                                a.btn.btn--secondary#btn-disconnect
+                                    img.lazyload(data-src="./images/wallet.svg" loading="lazy" width="24" height="24")
+                                    span#selected-account
+                                div.wallet-list-js
+                                    ul.menuBurger--footer__wallet--list
+                                        li.menuBurger--footer__wallet--list__item
+                                            p.text-14M Disconnect
+                            
+                    if authorization==true
+                        .menuBurger--footer__authorization
+                            a.btn.btn--primary(href="https://dashboard.portify.app/dashboard")
+                                img.lazyload(data-src="./images/log_in.svg" loading="lazy" width="24" height="24")
+                                span Sign in
+    header.header#home
+        .header--container 
+            .header--container__menuBurger.hamburger
+                img.header--container__menuBurger--icon.menuIcon(src="./images/openMenu.svg")
+                img.header--container__menuBurger--icon.closeIcon(src="./images/closeMenu.svg")
+            .header--container__logo
+                a(href= "https://portify.app/")
+                    img.lazyload(data-src="./images/Logo.svg" loading="lazy" width="173")
+            .header--container__menu
+                nav
+                    ul
+                        each item in items
+                            li
+                                if item.subFlag==true
+                                    span.text-14M= item.name
+                                    img.header--container__menu--arrow(src="./images/arrow.svg")
+                                    .header--container__menu--wrapper
+                                        ul
+                                            each sub in item.subMenu 
+                                                li 
+                                                    a(href=sub.link).text-14M= sub.name
+                                else 
+                                    a(href=item.link).text-14M= item.name
+            .header--container__bar
+                if course==true
+                    .loading-line
+                    .header--container__bar--course.pfyCurs-js
+                        //- .text-16M 1 $PFY = 5,84 USD
+                if language==true
+                    .header--container__bar--language
+                        .header--container__bar--language__button
+                            img.lazyload(data-src="./images/translate.svg" loading="lazy" width="24")
+                            div
+                                ul.header--container__bar--language__list.language-js
+                                    li.header--container__bar--language__list--item(data-language = 'en')
+                                        img.header--container__bar--language__list--item__img(src='./images/GB.svg')
+                                        p.text-14M English
+                                        img.header--container__bar--language__list--item__checkMark.lang-image-js(src='./images/language.svg')
+                                    li.header--container__bar--language__list--item(data-language = 'cn')
+                                        img.header--container__bar--language__list--item__img(src='./images/CN.svg')
+                                        p.text-14M Chinese
+                                        img.header--container__bar--language__list--item__checkMark.lang-image-js(src='./images/language.svg' style = 'display: none;')
+                if wallet==true
+                    #prepare
+                        .header--container__bar--wallet
+                            a.btn.btn--secondary#btn-connect
+                                img.lazyload(data-src="./images/wallet.svg" loading="lazy" width="24" height="24")
+                                span Connect wallet
+                    #connected(style="display:none")
+                        .header--container__bar--wallet
+                            a.btn.btn--secondary#btn-disconnect
+                                img.lazyload(data-src="./images/wallet.svg" loading="lazy" width="24" height="24")
+                                span#selected-account
+                            div.wallet-list-js
+                                ul.header--container__bar--wallet__list
+                                    li.header--container__bar--wallet__list--item
+                                        p.text-14M Disconnect
+                if authorization==true
+                    .header--container__bar--authorization
+                        a.btn.btn--primary(href="https://byte.portify.app/login/")
+                            img.lazyload(data-src="./images/log_in.svg" loading="lazy" width="24")
+                            span Sign in
+
+
+

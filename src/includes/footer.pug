@@ -1,0 +1,17 @@
+mixin footer(bg, partners, copiration, ...items)
+    footer.footer#links
+        if bg==true
+            .footer--bg
+        .footer--container 
+            .footer--container__left
+                p.text-12M=copiration
+            .footer--container__right
+                if partners==true 
+                    a(href='https://raritysniper.com/nft-drops-calendar' target='_blank')
+                        img(src = './images/rapitySniper.png' width = '64' height = '27')
+                .footer--container__right--menu
+                    nav
+                        ul
+                            each item in items
+                                li
+                                    a(href=item.link).text-12M= item.name
