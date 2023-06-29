@@ -1,7 +1,6 @@
 @use "~sass-rem" as rem
 @use "../config/helpers" as h
-@use "../layouts/_var.sass" as localVar
-
+// @use "../layouts/_var.sass" as localVar
 
 //	Typography
 strong
@@ -23,176 +22,39 @@ html
   -ms-user-select: none
   user-select: none
 
-html,
-body
-  // height: 100vh
-  // overflow: hidden
+html
+  overflow-x: hidden
 
 body
-  background: h.$bg-color
-  -webkit-font-smoothing: antialiased
-  overflow-x: hidden
+  background-color: #000
+  overflow: hidden
+
+.container
+  max-width: 1153px
+  margin: auto
+  padding: 0 15px
+  @media (max-width: 768px)
+    padding: 0 33px 0 40px
+.containerFuter
+  max-width: 1153px
+  margin: auto
+  @media (max-width: 768px)
+    padding: 0 25px 0 25px
 
 ul
   padding: 0
   margin: 0
   list-style: none
 
-h1
-  font-family: h.$font-family-SpaceGrotesk
-  font-style: normal
-  font-weight: 500
-  font-size: rem.convert(h.$font-size-96)
-  line-height: 100%
-  text-align: center
-  font-feature-settings: 'ss01' on, 'ss05' on, 'ss07' on, 'ss08' on, 'ss09' on, 'ss04' on
-  color: h.$text-color
-  padding: 0
-  margin: 0
-  @media (max-width: h.$mediaMaxWidthTable)
-    font-size: rem.convert(h.$font-size-72)
-  @media (max-width: h.$mediaMaxWidthMobil)
-    font-size: rem.convert(h.$font-size-32)
-
-h2
-  font-family: h.$font-family-SpaceGrotesk
-  font-style: normal
-  font-weight: 400
-  font-size: rem.convert(h.$font-size-72)
-  line-height: 110%
-  font-feature-settings: 'ss01' on
-  background: linear-gradient(286.99deg, #3069FE 3.84%, #A02BFD 81.67%)
-  background-clip: text
-  text-fill-color: transparent
-  margin: 0
-
-h3
-  font-family: localVar.$font-family
-  font-style: normal
-  font-weight: localVar.$font-width
-  font-size: rem.convert(h.$font-size-56)
-  line-height: 120%
-  color: h.$text-color
-  margin: 0
-  font-feature-settings: 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on, 'ss05' on, 'ss07' on, 'ss08' on, 'ss09' on, 'kern' off
-  @media (max-width: h.$mediaMaxWidthMobil)
-    font-size: rem.convert(h.$font-size-32)
-
-h4
-  font-family: h.$font-family-quicksand
-  font-style: normal
-  font-weight: 400
-  font-size: rem.convert(h.$font-size-32)
-  line-height: 120%
-  font-feature-settings: 'ss01' on, 'ss02' on, 'salt' on
-  color: h.$text-color
-  margin: 0
-
-p
-  font-family: h.$font-family-quicksand
-  font-style: normal
-  font-weight: 500
-  font-size: rem.convert(h.$font-size-18)
-  line-height: rem.convert(22px)
-  color: h.$text-color
-  flex: none
-  order: 0
-  align-self: stretch
-  flex-grow: 0
-  margin: 0
-  @media (max-width: h.$mediaMaxWidthMobil)
-    font-size: rem.convert(14px)
-
-a
-  text-decoration: none
-  transition: h.$transition
-
-.text-12M
-  font-family: h.$font-family-quicksand
-  font-style: normal
-  font-weight: 500
-  font-size: rem.convert(h.$font-size-12)
-  line-height: 120%
-  color: h.$text-color
-
-.text-14M
-  font-family: h.$font-family-quicksand
-  font-style: normal
-  font-weight: 500
-  font-size: rem.convert(h.$font-size-14)
-  line-height: 120%
-  color: h.$text-color
-
-.text-16M
-  font-family: h.$font-family-quicksand
-  font-style: normal
-  font-weight: 500
-  font-size: rem.convert(h.$font-size-16)
-  line-height: 120%
-  color: h.$text-color
-
-.text-20M
-  font-family: h.$font-family-quicksand
-  font-style: normal
-  font-weight: 500
-  font-size: rem.convert(h.$font-size-20)
-  line-height: rem.convert(25px)
-  color: h.$text-color
-
-.btn
-  display: flex
-  transition: h.$transition
-  cursor: pointer
-  border-radius: rem.convert(8px)
-  padding: rem.convert(14px) rem.convert(23px)
-  span 
-    white-space: nowrap
-    color: h.$text-color
-    margin: rem.convert(0px) rem.convert(8px)
-    font-family: h.$font-family-quicksand
-    font-style: normal
-    font-weight: 500
-    font-size: h.$font-size-16
-    line-height: rem.convert(23px)
-  &--primary
-    background-image: linear-gradient(to right, #A02BFD 0%, #3069FE 50%, #A02BFD 75.67%)
-    background-size: 200% auto
-    box-shadow: rem.convert(0) rem.convert(4px) rem.convert(20px) rgba(78, 0, 249, 0.55), inset rem.convert(0) rem.convert(-3px) rem.convert(0px) rgba(0, 0, 0, 0.06)
-    justify-content: center
-    &:hover
-      background-position: 100% 0
-    span
-      text-shadow: rem.convert(0px) rem.convert(1px) rem.convert(0px) rgba(0, 0, 0, 0.17)
-      
-  &--secondary
-    background: rgba(255, 255, 255, 0.08)
-    &:hover 
-        background: rgba(85, 85, 254, 0.23)
-        box-shadow: 0px 4px 20px rgba(78, 0, 249, 0.24)
-        transition: .3s
-    span
-        text-shadow: rem.convert(0px) rem.convert(1px) rem.convert(0px) rgba(0, 0, 0, 0.17)
-
-.tippy-box[data-theme~='withe']
-  font-family: h.$font-family-quicksand
-  font-style: normal
-  font-weight: 600
-  font-size: rem.convert(h.$font-size-14)
-  line-height: 120%
-  color: #2D2149
-  background: #fff
-  max-width: rem.convert(298px)!important
-  padding: rem.convert(11px) rem.convert(6px)
-  border-radius: rem.convert(16px)
-  .tippy-arrow
-    &:before
-      color: #fff
-
-[data-scroll]
-  transition: opacity 1s
-
-[data-scroll="in"]
-  opacity: 1
-
-[data-scroll="out"]
-  opacity: 0
+.ball3
+  position: absolute
+  z-index: -2
+  top: 350px
+  left: 800px
+  width: 1366px
+  height: 1366px
+  @media (max-width: 768px)
+    height: 1000px
+    width: 1000px
+    left: 4px
+    top: 250px

@@ -3,81 +3,18 @@ html.no-js(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible' content='ie=edge')
-    title Portify NFT
+    title Bit Maker
     link( rel="icon" href="./images/favicon.ico" type="image/x-icon")
     meta(name='description' content='Track, trade, discover, analyse, share and more all on one platform')
     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
 
   body
-
     //- Header 
-    include ../includes/header
-    +header(
-      false,
-      true,
-      true,
-      true,
-      {link: 'https://portify.app/', name: 'Home'}, 
-      {link: '#about', name: 'About'}, 
-      {link: '#utility', name: 'Utility'}, 
-      {link: '#exploreCollection', name: 'Explore collection'}, 
-      {link: '#faq', name: 'FAQ'}, 
-      {link: '#community', name: 'Community'},
-    )
-
-    //- Main 
-    include ../includes/block_1.pug
-
-    //- Faq 
-    include ../includes/faq
-    +faq(
-      false,
-      {index: 1, title: 'How many NFTs are there? What do they cost and how much can I buy at once?', text: 'There will be 500 NFTs at the price of 0.2 ETH and every mint is capped to max 3 NFTs.'}, 
-      {index: 2 ,title: 'I don’t hold any Portify tokens, is it beneficial for me to buy a NFT?', text: 'Everyone can access the fully released platform so holding PFY is not a must to benefit from all utilities of the NFT. Buying an NFT even results in passively holding 25.000 - 150.000 PFY.'}, 
-      {index: 3 ,title: 'Why is Portify as a Binance Smart Chain project releasing NFTs on the Ethereum chain?', text: 'Because there will be an Etheurem bridge on the SocialFi platform this means that Portify will be a multi-chain platform. This means that both Ethereum users as BSC users can join the platform and that the Portify token will have a liquidity pool on Ethereum as well. It’s also important that NFT minters have the benefit of an aftermarket. On the BSC this is not so big yet so the first collection will be launched on the Ethereum chain and will be listed on Opensea.'}, 
-      {index: 4 ,title: 'Will there be a whitelisting for this collection?', text: 'No, there will not be a whitelist simply because we will be having a collection of 500 NFTs which is not a lot.'},
-      {index: 5 ,title: 'Can I use my NFT as a profile picture in Byte?', text: 'Yes, everyone will be able to set his/her NFT as a profile picture on the Byte platform. Later there will also be a feature where you can verify your profile picture so people can see it’s really yours.'}, 
-      )
-
-    //- Community 
-    include ../includes/community
-    +community(
-      true,
-      {link: 'https://twitter.com/Portifyofficial', img: './images/twitter.svg', title: 'Twitter'},
-      {link: 'https://t.me/portify', img: './images/telegram.svg', title: 'Telegram'},
-      {link: 'https://t.co/VRbjft7hDR', img: './images/discord.svg', title: 'Discord'},
-    )
-
-    //- Footer 
-    include ../includes/footer
-    +footer(
-      false,
-      true,
-      'Portify © 2021 — All rights reserved',
-      {link: '#home', name: 'Home'}, 
-      {link: '#about', name: 'About'}, 
-      {link: '#utility', name: 'Utility'}, 
-      {link: '#exploreCollection', name: 'Explore collection'}, 
-      {link: '#faq', name: 'FAQ'}, 
-      {link: '#community', name: 'Community'},
-      )
-
-    <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
-
-
-    <div id="templates" >
-      <template id="template-balance">
-        <tr>
-          <th class="address"></th>
-          <td class="balance"></td>
-        </tr>
-      </template>
-    </div>
-
-
-      <div id="accounts">
-      </div>
+    include ../includes/headerWhite.pug
+    //- include ../includes/mainBlock.pug
+    //- include ../includes/numbers.pug
+    //- include ../includes/framework.pug
+    //- include ../includes/information.pug
+    //- include ../includes/connectors.pug
+    //- include ../includes/futerBottom.pug
+    //- include ../includes/modal.pug

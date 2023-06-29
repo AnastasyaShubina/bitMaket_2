@@ -1,6 +1,8 @@
 import 'normalize.css/normalize.css'
 import '../sass/style.sass'
 import { onDocumentReady, importAll } from './functions.js'
+import { modal } from './modal'
+
 
 importAll(
   require.context(
@@ -13,3 +15,5 @@ importAll(
 onDocumentReady(function () {
   console.log('hello.')
 })
+
+modal()

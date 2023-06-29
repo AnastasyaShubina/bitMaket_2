@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Milligram";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/TTFirsNeue/Milligram-Bold.ttf") format("truetype");
+}
+.headerWhite {
+  max-width: 1153px;
+  margin: auto;
+}
+.headerWhite .container {
+  margin-top: 47px;
+}
+.headerWhite .container--container {
+  display: flex;
+  justify-content: space-between;
+}
+.headerWhite .container--container__menu {
+  display: flex;
+  gap: 30px;
+}
+.headerWhite .container--container__menu a {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-family: Milligram;
+  font-weight: 500;
+}
+.headerWhite .container--container__menu--contactUs a {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-family: Milligram;
+  font-weight: 500;
+}

@@ -83,6 +83,7 @@
     "accordion-js": "^3.2.0",
     "glider-js": "^1.7.7",
     "lazysizes": "^5.3.2",
+    "swiper": "^9.2.0",
     "tippy.js": "^6.3.7",
     "web3": "^1.7.3",
     "web3modal": "^1.9.7"
