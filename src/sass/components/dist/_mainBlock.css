@@ -5,8 +5,7 @@
 .mainBlock--BGimg .balls {
   position: absolute;
   top: 0;
-  wight: 100vw;
-  height: 100vh;
+  width: 100%;
   left: 0;
   z-index: -1;
 }
@@ -57,7 +56,6 @@
 }
 .mainBlock--container .tryDemo:hover,
 .mainBlock--container .tryDemo:focus {
-  border-color: currentColor;
   background-color: #2E2E2E;
 }
 .mainBlock--container .tryDemo:hover p,
@@ -97,4 +95,10 @@
   line-height: 130%;
   font-weight: 400;
   margin: 0;
+}
+.mainBlock--img .bottomImg {
+  position: absolute;
+  left: 0;
+  max-width: 100%;
+  margin-top: -260px;
 }

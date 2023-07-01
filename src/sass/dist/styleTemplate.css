@@ -2,14 +2,24 @@
   font-family: "Milligram";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/TTFirsNeue/Milligram-Bold.ttf") format("truetype");
+  src: url("../fonts/Milligram/Milligram-Medium.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Milligram";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Milligram/Milligram-Light.ttf") format("truetype");
+}
+.container {
+  margin: 0 20px;
+}
+
 .headerWhite {
   max-width: 1153px;
   margin: auto;
 }
 .headerWhite--container {
-  margin-top: 47px;
+  margin: 47px 20px 0 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -24,23 +34,52 @@
   font-size: 14px;
   font-family: "Milligram";
   font-weight: 500;
+  text-decoration: none;
 }
-.headerWhite--container__menu--contactUs {
+.headerWhite--container__menu .contactUs {
   border-radius: 4px;
   border: 1px solid #000;
+  background-color: #ffffff00;
+  padding: 0;
+  cursor: pointer;
 }
-.headerWhite--container__menu--contactUs a {
+.headerWhite--container__menu .contactUs p {
   padding: 16px 26px;
   color: #000;
   text-align: center;
   font-size: 14px;
   font-family: "Milligram";
   font-weight: 500;
+  margin: 0;
+}
+.headerWhite--container__menu .contactUs:hover,
+.headerWhite--container__menu .contactUs:focus {
+  border-color: currentColor;
+  background-color: #000;
+}
+.headerWhite--container__menu .contactUs:hover p,
+.headerWhite--container__menu .contactUs:focus p {
+  color: #fff;
+}
+.headerWhite--container__menu .contactUs:active {
+  background-color: #2E2E2E;
 }
 
 .mainBlock {
   max-width: 1153px;
   margin: auto;
+}
+.mainBlock--BGimg .balls {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+.mainBlock--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .mainBlock--container__text h1 {
   max-width: 850px;
@@ -50,12 +89,143 @@
   font-family: Milligram;
   font-weight: 500;
   line-height: 120%;
+  margin: 116px 0 18px 0;
 }
 .mainBlock--container__text p {
   max-width: 470px;
-  color: #5F5F5F;
+  margin: auto;
+  color: #717171;
   text-align: center;
   font-size: 12px;
   font-family: Milligram;
   line-height: 150%;
+  margin-bottom: 51px;
+}
+.mainBlock--container .tryDemo {
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #000;
+  margin-bottom: 88px;
+  cursor: pointer;
+}
+.mainBlock--container .tryDemo p {
+  padding: 18px 62px;
+  color: #FFF;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 14px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 10px;
+  margin: 0;
+}
+.mainBlock--container .tryDemo:hover,
+.mainBlock--container .tryDemo:focus {
+  background-color: #2E2E2E;
+}
+.mainBlock--container .tryDemo:hover p,
+.mainBlock--container .tryDemo:focus p {
+  color: #fff;
+}
+.mainBlock--container .contactUs:active {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.mainBlock--container .contactUs:active p {
+  color: #000;
+}
+.mainBlock--container__numbers {
+  width: 726px;
+  justify-content: space-between;
+  display: flex;
+}
+.mainBlock--container__numbers--number {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  max-width: 104px;
+}
+.mainBlock--container__numbers--number h3.numberStyle {
+  color: #000;
+  font-size: 34px;
+  font-family: Milligram;
+  line-height: 100%;
+  font-weight: 400;
+  margin: 0;
+}
+.mainBlock--container__numbers--number p.numberStyle2 {
+  color: #5F5F5F;
+  font-size: 12px;
+  font-family: Milligram;
+  line-height: 130%;
+  font-weight: 400;
+  margin: 0;
+}
+.mainBlock--img .bottomImg {
+  position: absolute;
+  left: 0;
+  max-width: 100%;
+  margin-top: -260px;
+}
+
+.firstBlock {
+  max-width: 1153px;
+  margin: -700px auto 0 auto;
+}
+.firstBlock--container__text h2 {
+  color: #FFF;
+  font-size: 42px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 120%;
+}
+.firstBlock--container__text p {
+  color: #A0A0A0;
+  font-size: 20px;
+  font-family: Milligram;
+  line-height: 150%;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 10px;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Accumulation p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 10px;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-down p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 10px;
+}
+.firstBlock--container__bottomContainer p {
+  color: #676767;
+  font-size: 14px;
+  font-family: Milligram;
+  line-height: 160%;
+}
+.firstBlock--container__bottomContainer .tryDemo {
+  border-radius: 12px;
+  border: 1px solid #FFF;
+}
+.firstBlock--container__bottomContainer .tryDemo p {
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 10px;
 }

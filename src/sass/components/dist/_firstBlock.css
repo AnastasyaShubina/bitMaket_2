@@ -1,0 +1,66 @@
+.firstBlock {
+  background-color: #000;
+}
+.firstBlock--container {
+  max-width: 1153px;
+  margin: auto;
+  padding: 500px 20px;
+}
+.firstBlock--container__text {
+  display: flex;
+}
+.firstBlock--container__text h2 {
+  color: #FFF;
+  font-size: 42px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 120%;
+}
+.firstBlock--container__text p {
+  color: #A0A0A0;
+  font-size: 20px;
+  font-family: Milligram;
+  line-height: 150%;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 10px;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Accumulation p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 10px;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-down p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 10px;
+}
+.firstBlock--container__bottomContainer p {
+  color: #676767;
+  font-size: 14px;
+  font-family: Milligram;
+  line-height: 160%;
+}
+.firstBlock--container__bottomContainer .tryDemo {
+  border-radius: 12px;
+  border: 1px solid #FFF;
+}
+.firstBlock--container__bottomContainer .tryDemo p {
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 10px;
+}

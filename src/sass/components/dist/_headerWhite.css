@@ -1,9 +1,13 @@
+.container {
+  margin: 0 20px;
+}
+
 .headerWhite {
   max-width: 1153px;
   margin: auto;
 }
 .headerWhite--container {
-  margin-top: 47px;
+  margin: 47px 20px 0 30px;
   display: flex;
   justify-content: space-between;
 }
