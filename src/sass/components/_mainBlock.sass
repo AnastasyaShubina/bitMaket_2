@@ -6,14 +6,18 @@
         .balls
             position: absolute
             top: 0
-            width: 100%
+            width: 100vw
+            height: 100vh
             left: 0
             z-index: -1
+            object-fit: cover
 
     &--container
         display: flex
         flex-direction: column
         align-items: center
+        position: relative
+        z-index: 1
         &__text
             h1
                 max-width: 850px
@@ -90,4 +94,4 @@
             position: absolute
             left: 0
             max-width: 100%
-            margin-top: -260px
+            margin-top: -260px 

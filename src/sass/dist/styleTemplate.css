@@ -170,9 +170,23 @@
   margin-top: -260px;
 }
 
+.mainBlockImg--img .bottomImg {
+  position: absolute;
+  left: 0;
+  max-width: 100%;
+  margin-top: -260px;
+}
+
 .firstBlock {
+  background-color: #000;
+}
+.firstBlock--container {
   max-width: 1153px;
-  margin: -700px auto 0 auto;
+  margin: auto;
+  padding: 500px 20px;
+}
+.firstBlock--container__text {
+  display: flex;
 }
 .firstBlock--container__text h2 {
   color: #FFF;

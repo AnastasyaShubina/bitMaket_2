@@ -3,11 +3,12 @@
 }
 .firstBlock--container {
   max-width: 1153px;
-  margin: auto;
-  padding: 500px 20px;
+  margin: -20px auto;
+  padding: 128px 20px;
 }
 .firstBlock--container__text {
   display: flex;
+  justify-content: space-between;
 }
 .firstBlock--container__text h2 {
   color: #FFF;
@@ -15,12 +16,48 @@
   font-family: Milligram;
   font-weight: 500;
   line-height: 120%;
+  max-width: 350px;
+  margin: 0;
 }
 .firstBlock--container__text p {
   color: #A0A0A0;
   font-size: 20px;
   font-family: Milligram;
   line-height: 150%;
+  max-width: 323px;
+  margin: 0;
+}
+.firstBlock--container__schedule {
+  margin-top: 60px;
+  border-radius: 8px;
+  background: #141414;
+  display: flex;
+  padding: 17px;
+  gap: 26px;
+  justify-content: space-between;
+}
+.firstBlock--container__schedule--buttons {
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.firstBlock--container__schedule--buttons__bgButtons {
+  border-radius: 8px;
+  border: 2px solid #1A1A1A;
+  padding: 58px 46px;
+  cursor: pointer;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up {
+  width: 183px;
+  height: 54px;
+  border-radius: 12px;
+  background: #1A1A1A;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 .firstBlock--container__schedule--buttons__bgButtons .Mark-up p {
   color: #000;
@@ -29,6 +66,35 @@
   font-family: Milligram;
   font-weight: 500;
   line-height: 10px;
+  color: #fff;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up:hover,
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up:focus {
+  border-color: currentColor;
+  border: 1px solid #0FFBE4;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up:hover p,
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up:focus p {
+  color: #fff;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up:active {
+  border-color: currentColor;
+  background-color: #0FFBE4;
+  box-shadow: 0px 4px 34px 0px rgba(13, 202, 184, 0.2);
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up:hover:active:before {
+  filter: blur(10px);
+}
+.firstBlock--container__schedule--buttons__bgButtons .Accumulation {
+  width: 183px;
+  height: 54px;
+  border-radius: 12px;
+  background: #1A1A1A;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 .firstBlock--container__schedule--buttons__bgButtons .Accumulation p {
   color: #000;
@@ -37,6 +103,31 @@
   font-family: Milligram;
   font-weight: 500;
   line-height: 10px;
+  color: #fff;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Accumulation:hover,
+.firstBlock--container__schedule--buttons__bgButtons .Accumulation:focus {
+  border-color: currentColor;
+  border: 1px solid #FF7A00;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Accumulation:active {
+  border-color: currentColor;
+  background-color: #FF7A00;
+  box-shadow: 0px 4px 34px 0px rgba(13, 202, 184, 0.2);
+}
+.firstBlock--container__schedule--buttons__bgButtons .Accumulation:hover:active:before {
+  filter: blur(10px);
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-down {
+  width: 183px;
+  height: 54px;
+  border-radius: 12px;
+  background: #1A1A1A;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 .firstBlock--container__schedule--buttons__bgButtons .Mark-down p {
   color: #000;
@@ -45,16 +136,41 @@
   font-family: Milligram;
   font-weight: 500;
   line-height: 10px;
+  color: #fff;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-down:hover,
+.firstBlock--container__schedule--buttons__bgButtons .Mark-down:focus {
+  border-color: currentColor;
+  border: 1px solid #FF3628;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-down:active {
+  border-color: currentColor;
+  background-color: #FF3628;
+  box-shadow: 0px 4px 34px 0px rgba(13, 202, 184, 0.2);
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-down:hover:active:before {
+  filter: blur(10px);
+}
+.firstBlock--container__bottomContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 46px;
 }
 .firstBlock--container__bottomContainer p {
   color: #676767;
   font-size: 14px;
   font-family: Milligram;
   line-height: 160%;
+  max-width: 564px;
 }
 .firstBlock--container__bottomContainer .tryDemo {
   border-radius: 12px;
   border: 1px solid #FFF;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  cursor: pointer;
 }
 .firstBlock--container__bottomContainer .tryDemo p {
   color: #FFF;
@@ -63,4 +179,22 @@
   font-family: Milligram;
   font-weight: 500;
   line-height: 10px;
+  margin: 0;
+  padding: 20px 40px;
+}
+.firstBlock--container__bottomContainer .tryDemo:hover,
+.firstBlock--container__bottomContainer .tryDemo:focus {
+  border-color: currentColor;
+  background-color: #fff;
+}
+.firstBlock--container__bottomContainer .tryDemo:hover p,
+.firstBlock--container__bottomContainer .tryDemo:focus p {
+  color: #000;
+}
+.firstBlock--container__bottomContainer .tryDemo:active {
+  border-color: currentColor;
+  background-color: #E2E2E2;
+}
+.firstBlock--container__bottomContainer .tryDemo:active p {
+  color: #000;
 }
