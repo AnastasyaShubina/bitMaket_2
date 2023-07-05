@@ -1,11 +1,15 @@
-//- .modal 
-//-     .modal--window
-//-         .modal--window__content
-//-             .modal--window__content--text
-//-                 p Leave your Telegram username to get in touch
-//-                 img(src="./images/closedIcon.png", alt="closedIcon").close
-                    
-//-             .modal--window__content--main 
-//-                 input(type="" placeholder="@TG_username")
-//-                 button.send
-//-                     p Send
+.modal
+    .modal--window
+        .modal--window__content
+            img(src="./images/close.svg", alt="").close
+            .modal--window__content--text
+                h3 Main page
+                h3 About product
+            .modal--window__content--button 
+                button.contactUs
+                    p Сontact us
+            .modal--window__content--footer 
+                .modal--window__content--footer__tg 
+                    img(src="/images/tg2.svg", alt="").tg
+                    p Telegram
+                a(href="mailto:sale@work@bitmaker.com") work@bitmaker.com

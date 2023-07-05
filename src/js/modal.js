@@ -1,5 +1,5 @@
 export const modal = () => {
-    const contactUsBtn = document.querySelector('.header--container__contactUs a');
+    const contactUsBtn = document.querySelector('.headerWhite--container__menuMobile');
     const modal = document.querySelector('.modal');
     const modalCloseBtn = document.querySelector('.close');
     const html = document.querySelector('html');
@@ -12,7 +12,7 @@ export const modal = () => {
 
     modal.addEventListener('click', (e) => {
     if (e.target === modal || e.target === modalCloseBtn) {
-        modal.style.transform = "translateX(500px)";
+        modal.style.transform = "translateX(1000px)";
         modal.classList.remove('bounce');
         // html.style.overflowY = 'auto';
     }

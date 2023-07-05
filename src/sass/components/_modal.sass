@@ -1,122 +1,87 @@
-// @keyframes bounce
-//     0%
-//         transform: translateX(500px)
-//     50%
-//         transform: translateX(-30px)
-//     100%
-//         transform: translateX(0px)
+@keyframes bounce
+    0%
+        transform: translateX(1000px)
+    100%
+        transform: translateX(0px)
 
-// .modal
-//     position: fixed
-//     bottom: 20px
-//     right: 20px
-//     z-index: 98
-//     transition: 1s
-//     transform: translateX(500px)
-//     &.bounce
-//         animation: bounce .7s
+.modal
+    width: 100%
+    height: 100%
+    background-color: #fff
+    position: fixed
+    bottom: 0px
+    z-index: 98
+    transition: 1s
+    transform: translateX(1000px)
+    &.bounce
+        animation: bounce .7s
+    &--window
+        padding: 26px 25px 53px 25px
+        &__content
+            img.close
+                position: absolute
+                right: 25px
+                top: 26px
+            &--text
+                margin-top: 300px
+                h3 
+                    color: #000
+                    text-align: center
+                    font-size: 32px
+                    font-family: Milligram
+                    font-style: normal
+                    font-weight: 500
+                    line-height: normal
+            &--button 
+                text-align: center
+                margin-top: 205px
+                .contactUs
+                    border-radius: 4px
+                    border: 1px solid #000
+                    background-color: #ffffff00
+                    padding: 0
+                    cursor: pointer
+                    
+                    p
+                        padding: 16px 26px
+                        color: #000
+                        text-align: center
+                        font-size: 14px
+                        font-family: 'Milligram'
+                        font-weight: 500
+                        margin: 0
+                .contactUs:hover,
+                .contactUs:focus 
+                    border-color: currentColor
+                    background-color: #000
+                    p
+                        color: #fff
+                .contactUs:active
+                    background-color: #2E2E2E
 
-//     &--window
-//         z-index: 99
-//         width: 418.26px
-//         height: 171.9px
-//         background: radial-gradient(143.16% 409.5% at 157.95% 380.09%, #FF685E 0%, #2B3B95 155%)
-//         // margin-left: auto
-//         // margin-right: auto
-//         // left: 0
-//         // right: 0
-//         // transform: translate(0%, 300%)
-//         border-radius: 24.65px
-//         box-shadow: inset 0px 0px 48.5537px rgba(255, 255, 255, 0.15), inset 2.8561px 2.8561px 5.7122px rgba(255, 255, 255, 0.25)
-//         backdrop-filter: blur(30.7031px)
-//         @media (max-width: 768px)
-//             width: 333px
-//             height: 137.37px
-//             border-radius: 19.63px
-//         &__content
-//             &--text
-//                 display: flex
-//                 padding: 21px 34px 23.11px 34px
-//                 ustify-content: space-between
-//                 @media (max-width: 768px)
-//                     padding: 17.17px 27.6px 18.4px 27.6px
-//             p
-//                 font-family: 'Golos'
-//                 font-style: normal
-//                 font-weight: 500
-//                 color: #ffffff
-//                 font-size: 24.6502px
-//                 line-height: 30px
-//                 letter-spacing: 0.02em
-//                 margin: 0
-//                 @media (max-width: 768px)
-//                     font-size: 19.63px
-//                     line-height: 24px
-//             .close
-//                 cursor: pointer
-//                 height: 20px
-//                 width: 20px
-//                 @media (max-width: 768px)
-//                     height: 16px
-//                     width: 16px
-//                 //margin: -2px -8px
-
-//             &--main
-//                 padding: 0px 49px 23.11px 34px
-//                 display: flex
-//                 justify-content: space-between
-//                 @media (max-width: 768px)
-//                     padding: 0px 28px 18.11px 28px
-//                 input
-//                     width: 216.98px
-//                     height: 44.11px
-//                     background: rgba(41, 56, 136, 0.2)
-//                     border: 0.770318px solid #FFFFFF
-//                     border-radius: 15.4064px
-//                     color: rgb(255, 255, 255)
-//                     padding: 11px 23px
-//                     font-family: 'TT Firs Neue'
-//                     font-style: normal
-//                     font-weight: 500
-//                     font-size: 16.1767px
-//                     line-height: 21px
-//                     @media (max-width: 768px)
-//                         width: 188.4px
-//                         height: 35.4px
-//                         border-radius: 12.27px
-//                         font-size: 12.88px
-//                         padding: 9.2px 18.4px
-//                     &::placeholder
-//                         font-family: 'TT Firs Neue'
-//                         font-style: normal
-//                         font-weight: 500
-//                         font-size: 16.1767px
-//                         line-height: 21px
-//                         letter-spacing: 0.02em
-//                         color: rgba(255, 255, 255, 0.6)
-//                         @media (max-width: 768px)
-//                             font-size: 12.88px
-
-//                         //padding: 11px 23px
-
-//             .send
-//                 border: 0.770318px solid #ffffff
-//                 border-radius: 15.4064px
-//                 background: none
-//                 @media (max-width: 768px)
-//                     width: 68.8px
-//                     height: 35.4px
-//                     border: 0.613311px solid #FFFFFF
-//                     border-radius: 12.2662px
-//                 p
-//                     font-family: 'TT Firs Neue'
-//                     font-style: normal
-//                     font-weight: 500
-//                     font-size: 16.1767px
-//                     line-height: 21px
-//                     letter-spacing: 0.02em
-//                     color: #FFFFFF
-//                     padding: 11.55px 23.11px
-//                     @media (max-width: 768px)
-//                         font-size: 12.8795px
-//                         padding: 5.2px 0px
+                    p 
+            &--footer 
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-top: 100px
+                &__tg 
+                    display: flex
+                    img.tg
+                        
+                    p 
+                        color: #000
+                        font-size: 14px
+                        font-family: Milligram
+                        font-style: normal
+                        font-weight: 500
+                        line-height: normal
+                a
+                    color: #000
+                    text-align: right
+                    font-size: 14px
+                    font-family: Milligram
+                    font-style: normal
+                    font-weight: 500
+                    line-height: normal
+                    text-decoration: none
