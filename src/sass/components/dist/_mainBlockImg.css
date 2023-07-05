@@ -1,0 +1,10 @@
+.mainBlockImg--img .bottomImg {
+  left: 0;
+  max-width: 100%;
+  margin-top: -260px;
+}
+@media (max-width: 1080px) {
+  .mainBlockImg--img .bottomImg {
+    margin-top: -220px;
+  }
+}

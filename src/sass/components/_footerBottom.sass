@@ -1,30 +1,36 @@
-// .futerBottom
+.futerBottom
+    background-color: #000
     
-//     &--line
-//         display: flex
-//         justify-content: space-between
-//         padding-bottom: 63px
-//         width: 100%
-//         border-top: 2px solid rgba(203, 203, 203, 0.2)
-//         @media (max-width: 768px)
-//             padding-bottom: 20px
-//         p 
-//             font-size: 21px
-//             font-family: TT Firs Neue
-//             font-weight: 500 
-//             color: #fff
-//             opacity: 0.8
-//             padding: 15px 0 0 20px
-//             margin: 0
-//             @media (max-width: 768px)
-//                 font-size: 12px
-                
-//         &__messengers 
-//             img
-//                 padding: 15px 20px 0px 0px
-//                 @media (max-width: 768px)
-//                     margin: 11px 8px 0px 8px
-//                     padding: 0
-//                      smax-width: 14px 
-
-   
+    &--container 
+        max-width: 1153px
+        margin:  auto 
+        padding: 0px 20px 70px 20px 
+        display: flex
+        justify-content: space-between
+        
+        img.logo
+            max-width: 131px
+        &__massengers
+            display: flex
+            align-items: center
+            gap: 40px
+            &--tg 
+                display: flex
+                img.tg
+                p 
+                    color: #FFF
+                    text-align: center
+                    font-size: 14px
+                    font-family: Milligram
+                    font-style: normal
+                    font-weight: 500
+                    line-height: normal
+            a
+                color: #FFF
+                text-align: right
+                font-size: 14px
+                font-family: Milligram
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                text-decoration: none
