@@ -4,10 +4,12 @@
         max-width: 1153px
         margin: -20px auto 
         padding: 128px 20px 
-        
+        @media (max-width: 768px)
+            padding: 94px 20px 0 20px
         &__text 
             display: flex
             justify-content: space-between
+            align-items: center
             h2 
                 color: #FFF
                 font-size: 42px
@@ -16,13 +18,19 @@
                 line-height: 120%
                 max-width: 350px
                 margin: 0
+                @media (max-width: 768px)
+                    max-width: 304px
+                    font-size: 36px
+
             p 
                 color: #A0A0A0
                 font-size: 20px
                 font-family: Milligram
                 line-height: 150%
                 max-width: 323px
-                margin: 0
+                @media (max-width: 768px)
+                    font-size: 18px
+                
         &__schedule
             margin-top: 60px
             border-radius: 8px
@@ -31,17 +39,34 @@
             padding: 17px
             gap: 26px
             justify-content: space-between
+            @media (max-width: 1185px)
+                flex-direction: column
+            @media (max-width: 768px)
+                padding: 30px
             img
             &--buttons 
                 gap: 18px
                 display: flex
                 flex-direction: column
                 width: 100%
+                @media (max-width: 1185px)
+                        flex-direction: row
+                        justify-content: space-between
+                        gap: 12px
+
                 &__bgButtons
                     border-radius: 8px
                     border: 2px solid  #1A1A1A
                     padding: 58px 46px
                     cursor: pointer
+                    @media (max-width: 1185px)
+                        width: 100%
+                        text-align: center
+                    @media (max-width: 950px)
+                        padding: 58px 10px
+                    @media (max-width: 768px)
+                        padding: 36px 10px
+                        margin: 0
                     .Mark-up
                         width: 183px
                         height: 54px
@@ -52,6 +77,8 @@
                         font: inherit
                         color: inherit
                         cursor: pointer
+                        @media (max-width: 768px)
+                            width: 140px
                         p 
                             color: #000
                             text-align: center
@@ -89,6 +116,8 @@
                         font: inherit
                         color: inherit
                         cursor: pointer
+                        @media (max-width: 768px)
+                            width: 140px
                         p 
                             color: #000
                             text-align: center
@@ -120,6 +149,8 @@
                         font: inherit
                         color: inherit
                         cursor: pointer
+                        @media (max-width: 768px)
+                            width: 140px
                         p 
                             color: #000
                             text-align: center
@@ -145,12 +176,16 @@
             display: flex
             justify-content: space-between
             margin-top: 46px
+            align-items: center
             p 
                 color: #676767
                 font-size: 14px
                 font-family: Milligram
                 line-height: 160%
                 max-width: 564px
+                @media (max-width: 768px)
+                    max-width: 404px
+                    
             .tryDemo 
                 border-radius: 12px
                 border: 1px solid #FFF

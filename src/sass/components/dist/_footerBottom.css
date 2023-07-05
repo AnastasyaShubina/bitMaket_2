@@ -8,6 +8,11 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .futerBottom--container {
+    padding: 0 20px 30px 20px;
+  }
+}
 .futerBottom--container img.logo {
   max-width: 131px;
 }

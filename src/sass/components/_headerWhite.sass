@@ -10,9 +10,13 @@
         &__logo
             .headerWhite--container__logo--img
         &__menu
+
                 display: flex
                 gap: 30px
                 align-items: center
+                @media (max-width: 768px)
+                    display: none
+
                 a
                     color: #000
                     text-align: center
@@ -42,4 +46,9 @@
                         color: #fff
                 .contactUs:active
                     background-color: #2E2E2E
+        &__menuMobile
+            display: none
+            @media (max-width: 768px)
+                display: block
+                cursor: pointer
 

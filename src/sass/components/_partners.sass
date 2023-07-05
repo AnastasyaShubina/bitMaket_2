@@ -4,10 +4,9 @@
         max-width: 1153px
         margin: -20px auto 
         padding: 128px 20px 
-
+        @media (max-width: 768px)
+            padding: 60px 20px 
         &__content
-            
-
             h2 
                 color: #FFF
                 font-size: 42px
@@ -16,6 +15,8 @@
                 line-height: 120%
                 max-width: 350px
                 margin: 0
+                @media (max-width: 768px)
+                    font-size: 36px
 
             &--imgs
                 margin-top: 60px
@@ -25,8 +26,13 @@
                 border-radius: 8px
                 background: #141414
                 padding: 89px 125px 55px 125px
+                @media (max-width: 768px)
+                    padding: 68px 55px 47px 55px
+                    margin-top: 43px
                 img.partners
                     width: 100%
                     background-color: #141414
                 img.logo2
                     max-width: 182px
+                    @media (max-width: 768px)
+                        max-width: 147px

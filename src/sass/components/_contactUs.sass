@@ -4,6 +4,8 @@
         max-width: 1153px
         margin: auto 
         padding: 45px 20px 115px 20px 
+        @media (max-width: 768px)
+            padding: 75px 20px 61px 20px
         &__content
             display: flex
             flex-direction: column
@@ -22,6 +24,9 @@
                 margin-top: 53px
                 margin-bottom: 33px
                 z-index: 1
+                @media (max-width: 855px)
+                    margin-bottom: 27px
+                    margin-top: 53px
             .contactUs
                     border-radius: 4px
                     border: 1px solid #000
@@ -29,6 +34,10 @@
                     padding: 0
                     cursor: pointer
                     z-index: 1
+                    @media (max-width: 855px)
+                        margin-bottom: 90px
+                    @media (max-width: 768px)
+                        margin-bottom: 105px
                     p
                         padding: 16px 26px
                         color: #000

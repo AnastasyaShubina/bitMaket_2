@@ -5,6 +5,13 @@
 }
 @media (max-width: 1080px) {
   .mainBlockImg--img .bottomImg {
-    margin-top: -220px;
+    margin-top: -210px;
+  }
+}
+@media (max-width: 768px) {
+  .mainBlockImg--img .bottomImg {
+    margin-top: -200px;
+    max-width: 154%;
+    margin-left: -150px;
   }
 }

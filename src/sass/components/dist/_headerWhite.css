@@ -1,0 +1,68 @@
+.container {
+  margin: 0 20px;
+}
+
+.headerWhite {
+  max-width: 1153px;
+  margin: auto;
+}
+.headerWhite--container {
+  margin: 47px 20px 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.headerWhite--container__menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .headerWhite--container__menu {
+    display: none;
+  }
+}
+.headerWhite--container__menu a {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Milligram";
+  font-weight: 500;
+  text-decoration: none;
+}
+.headerWhite--container__menu .contactUs {
+  border-radius: 4px;
+  border: 1px solid #000;
+  background-color: #ffffff00;
+  padding: 0;
+  cursor: pointer;
+}
+.headerWhite--container__menu .contactUs p {
+  padding: 16px 26px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Milligram";
+  font-weight: 500;
+  margin: 0;
+}
+.headerWhite--container__menu .contactUs:hover,
+.headerWhite--container__menu .contactUs:focus {
+  border-color: currentColor;
+  background-color: #000;
+}
+.headerWhite--container__menu .contactUs:hover p,
+.headerWhite--container__menu .contactUs:focus p {
+  color: #fff;
+}
+.headerWhite--container__menu .contactUs:active {
+  background-color: #2E2E2E;
+}
+.headerWhite--container__menuMobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .headerWhite--container__menuMobile {
+    display: block;
+    cursor: pointer;
+  }
+}
