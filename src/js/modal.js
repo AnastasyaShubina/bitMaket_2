@@ -1,5 +1,5 @@
 export const modal = () => {
-    const contactUsBtn = document.querySelector('.headerWhite--container__menuMobile');
+    const contactUsBtn = document.querySelector('.headerWhite--container__menuMobile') ?? document.querySelector('.headerBlack--container__menuMobile');
     const modal = document.querySelector('.modal');
     const modalCloseBtn = document.querySelector('.close');
     const html = document.querySelector('html');

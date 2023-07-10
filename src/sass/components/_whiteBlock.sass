@@ -6,6 +6,10 @@
         &__container
             &--header
                 padding: 100px 0 40px
+                @media (max-width: 1160px)
+                    padding: 62px 0 86px
+                @media (max-width: 768px)
+                    padding: 56px 0
                 h2
                     text-align: center
                     font-family: Milligram
@@ -15,12 +19,17 @@
                     font-weight: 500
                     line-height: 130%
                     margin: 0
+                    @media (max-width: 1160px)
+                        font-size: 33px
+                    @media (max-width: 768px)
             &--slider
                 border-radius: 20px
                 border: 1px solid var(--white-80, #F4F4F4)
                 max-width: 1160px
                 margin: auto
                 padding-top: 38px
+                @media (max-width: 1160px)
+                    padding-top: 0
                 &__tabs
                     display: flex
                     justify-content: center
@@ -31,6 +40,11 @@
                     margin: auto
                     gap: 6px
                     margin: 0 48px 38px
+                    @media (max-width: 1160px)
+                        margin: 0
+                    @media (max-width: 768px)
+                        display: grid
+                        grid-template-columns: 1fr 1fr
                     .active
                         background: #000
                         a
@@ -42,6 +56,9 @@
                         border-radius: 7px
                         width: 100%
                         text-align: center
+                        @media (max-width: 1160px)
+                        @media (max-width: 768px)
+                            width: auto
                         a
                             color: #ADADAD
                             text-align: center
@@ -58,6 +75,10 @@
                         &__container
                             display: flex
                             gap: 56px
+                            @media (max-width: 1160px)
+                                flex-direction: column
+                            @media (max-width: 768px)
+
                             &--left
                                 display: grid
                                 gap: 25px

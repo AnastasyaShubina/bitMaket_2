@@ -8,9 +8,13 @@
         align-items: center
         position: relative
         z-index: 3
-
+        @media (max-width: 1160px)
+            flex-direction: column
+        @media (max-width: 768px)
         &__text
             &--main
+                display: grid
+                gap: 27px
                 h4
                     max-width: 387px
                     color: #FFF
@@ -20,6 +24,7 @@
                     font-weight: 500
                     line-height: 130%
                     //margin: 116px 0 18px 0
+                    margin: 0
                     @media (max-width: 768px)
                         // margin: 106px 0 28px 0
                         // max-width: 638px
@@ -31,15 +36,24 @@
                     font-style: normal
                     font-weight: 400
                     line-height: 150%
+                    margin: 0
                     //margin-bottom: 51px
                     @media (max-width: 768px)
                         //margin-bottom: 38px
             &--list
+                margin-top: 160px
+                @media (max-width: 1160px)
+                    margin-top: 71px
+                    display: flex
+                    gap: 57px
+                @media (max-width: 768px)
+                    margin-top: 50px
+                    display: block
                 &__string
                     display: flex
                     align-items: center
                     gap: 15px
-                    h5 
+                    h5
                         color: #FFF
                         font-size: 20px
                         font-family: Milligram
@@ -50,4 +64,8 @@
         &__schedule
             img
                 max-width: 822px
-                    
+                @media (max-width: 1160px)
+                    width: 100%
+                @media (max-width: 768px)
+                    width: 100%
+                    margin-top: 34px
