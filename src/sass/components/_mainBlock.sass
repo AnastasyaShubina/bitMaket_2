@@ -87,6 +87,11 @@
                 gap: 13px
                 align-items: flex-start
                 max-width: 104px
+                @media (max-width: 768px)
+                    display: grid
+                    justify-items: center
+                    grid-template-columns: 1fr 1fr
+                    justify-items: start
                 h3.numberStyle
                     color: #000
                     font-size: 34px
