@@ -1,0 +1,102 @@
+.contactUs {
+  background-color: #000;
+}
+.contactUs--container {
+  max-width: 1153px;
+  margin: auto;
+  padding: 45px 20px 115px 20px;
+}
+@media (max-width: 768px) {
+  .contactUs--container {
+    padding: 75px 20px 61px 20px;
+  }
+}
+.contactUs--container__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background: #0B0B0B;
+}
+.contactUs--container__content h2 {
+  color: #FFF;
+  font-size: 42px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 120%;
+  max-width: 350px;
+  margin: 0;
+  text-align: center;
+  margin-top: 53px;
+  margin-bottom: 33px;
+  z-index: 1;
+}
+@media (max-width: 855px) {
+  .contactUs--container__content h2 {
+    margin-bottom: 27px;
+    margin-top: 53px;
+  }
+}
+.contactUs--container__content .contactUs {
+  border-radius: 4px;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+@media (max-width: 855px) {
+  .contactUs--container__content .contactUs {
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .contactUs--container__content .contactUs {
+    margin-bottom: 105px;
+  }
+}
+.contactUs--container__content .contactUs p {
+  padding: 16px 26px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Milligram";
+  font-weight: 500;
+  margin: 0;
+}
+.contactUs--container__content .contactUs:hover,
+.contactUs--container__content .contactUs:focus {
+  border-color: currentColor;
+  background-color: #000;
+  border: 1px solid #fff;
+}
+.contactUs--container__content .contactUs:hover p,
+.contactUs--container__content .contactUs:focus p {
+  color: #fff;
+}
+.contactUs--container__content .contactUs:active {
+  background-color: #000;
+  border: 1px solid #969696;
+}
+.contactUs--container__content .contactUs:active p {
+  color: #969696;
+}
+.contactUs--container__content .imgCU {
+  margin-top: -250px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .contactUs--container__content .imgCU {
+    display: none;
+  }
+}
+.contactUs--container__content .imgCUM {
+  width: 100%;
+  display: none;
+  margin-top: -415px;
+}
+@media (max-width: 768px) {
+  .contactUs--container__content .imgCUM {
+    display: block;
+  }
+}

@@ -11,12 +11,15 @@
             padding: 0 20px 30px 20px
         img.logo
             max-width: 131px
+            @media (max-width: 768px)
+                display: none
         &__massengers
             display: flex
             align-items: center
             gap: 40px
             @media (max-width: 768px)
-                
+                width: 100%
+                justify-content: space-between
             &--tg 
                 display: flex
                 img.tg

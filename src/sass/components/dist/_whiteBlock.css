@@ -243,6 +243,21 @@
     margin: 0 20px;
   }
 }
-.whiteBlock--sleekIntuitive__container--img img {
+.whiteBlock--sleekIntuitive__container--img img.displayChartsImg {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .whiteBlock--sleekIntuitive__container--img img.displayChartsImg {
+    display: none;
+  }
+}
+.whiteBlock--sleekIntuitive__container--img img.displayChartsImgMobile {
+  width: 100%;
+  display: none;
+  margin-bottom: -3px;
+}
+@media (max-width: 768px) {
+  .whiteBlock--sleekIntuitive__container--img img.displayChartsImgMobile {
+    display: block;
+  }
 }
