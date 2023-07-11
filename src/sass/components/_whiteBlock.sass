@@ -9,7 +9,7 @@
                 @media (max-width: 1160px)
                     padding: 62px 0 86px
                 @media (max-width: 768px)
-                    padding: 56px 0
+                    padding: 56px 0 40px
                 h2
                     text-align: center
                     font-family: Milligram
@@ -24,12 +24,17 @@
                     @media (max-width: 768px)
             &--slider
                 border-radius: 20px
-                border: 1px solid var(--white-80, #F4F4F4)
+                border: 1px solid  #CFCFCF
                 max-width: 1160px
                 margin: auto
                 padding-top: 38px
                 @media (max-width: 1160px)
-                    padding-top: 0
+                    padding: 22px 20px
+                    margin: 22px 20px
+                @media (max-width: 768px)
+                    border: none
+                    margin: 0
+
                 &__tabs
                     display: flex
                     justify-content: center
@@ -45,6 +50,7 @@
                     @media (max-width: 768px)
                         display: grid
                         grid-template-columns: 1fr 1fr
+                        padding: 11px
                     .active
                         background: #000
                         a
@@ -69,8 +75,14 @@
                             line-height: 122%
 
                 &__display
-                    padding: 50px
-                    border-top: 1px solid #F4F4F4
+                    padding: 80px
+                    border-top: 1px solid #CFCFCF
+                    margin-top: 22px
+                    @media (max-width: 1160px)
+                        padding: 30px 37px
+                    @media (max-width: 768px)
+                        border-top: none
+                        padding: 0
                     &--item
                         &__container
                             display: flex
@@ -83,13 +95,17 @@
                                 display: grid
                                 gap: 25px
                                 p
-                                    color: #5F5F5F
+                                    color: #000
                                     font-family: Milligram
                                     font-size: 16px
                                     font-style: normal
                                     font-weight: 400
                                     line-height: 160%
                                     margin: 0
+                                    max-width: 370px
+                                    @media (max-width: 1160px)
+                                        max-width: 501px
+                                    @media (max-width: 768px)
                                 h4
                                     color: #000
                                     font-family: Milligram
@@ -98,15 +114,39 @@
                                     font-weight: 500
                                     line-height: 140%
                                     margin: 0
+                                    max-width: 400px
+                                    @media (max-width: 1160px)
+                                        max-width: 640px
+                                    @media (max-width: 768px)
                             &--rigth
-                                img
+                                img.mobile
                                     max-width: 602px
+                                    @media (max-width: 1160px)
+                                        max-width: 100%
+                                    @media (max-width: 768px)
+                                        display: none
+                                img.mobileMobile
+                                    display: none
+                                    @media (max-width: 768px)
+                                        display: block
+                                        width: 100%
+
     &--banner
         &__container
             max-width: 1160px
             margin: 10px auto
             img
                 width: 100%
+            @media (max-width: 1160px)
+                display: none
+        &__containerMobile
+            margin: 0 24px
+            img
+                width: 100%
+                display: none
+                @media (max-width: 1160px)
+                    display: block
+                @media (max-width: 768px)
     &--sleekIntuitive
         &__container
             &--hedaer
@@ -115,7 +155,7 @@
                 margin-top: 120px
                 margin-bottom: 75px
                 h2
-                    color: var(--bleck-100, #000)
+                    color: #000
                     text-align: center
                     font-family: Milligram
                     font-size: 42px
@@ -125,7 +165,7 @@
                     max-width: 410px
                     margin: 0 auto
                 p
-                    color: var(--bleck-30, #5F5F5F)
+                    color: #5F5F5F
                     text-align: center
                     font-family: Milligram
                     font-size: 16px
@@ -138,4 +178,8 @@
             &--img
                 display: flex
                 justify-content: center
+                @media (max-width: 1160px)
+                    margin: 0 20px
+                @media (max-width: 768px)
                 img
+                    width: 100%

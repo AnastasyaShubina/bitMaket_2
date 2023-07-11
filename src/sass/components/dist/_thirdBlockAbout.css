@@ -11,9 +11,14 @@
   background: #121212;
   padding: 57px 66px 0px 66px;
 }
+@media (max-width: 1160px) {
+  .thirdBlockAbout__loyaut--container {
+    padding: 46px 31px 0;
+  }
+}
 @media (max-width: 768px) {
   .thirdBlockAbout__loyaut--container {
-    padding: 94px 20px 0 20px;
+    padding: 44px 28px 0 28px;
   }
 }
 .thirdBlockAbout__loyaut--container__text {
@@ -21,43 +26,80 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .thirdBlockAbout__loyaut--container__text {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+  }
+}
 .thirdBlockAbout__loyaut--container__text h2 {
   color: #FFF;
-  font-size: 42px;
+  font-size: 36px;
   font-family: Milligram;
   font-weight: 500;
   line-height: 120%;
   max-width: 457px;
   margin: 0;
 }
+@media (max-width: 1160px) {
+  .thirdBlockAbout__loyaut--container__text h2 {
+    font-size: 24px;
+    max-width: 268px;
+  }
+}
 @media (max-width: 768px) {
   .thirdBlockAbout__loyaut--container__text h2 {
-    max-width: 304px;
-    font-size: 36px;
+    max-width: none;
   }
 }
 .thirdBlockAbout__loyaut--container__text p {
   color: #A0A0A0;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Milligram;
   line-height: 150%;
   max-width: 404px;
 }
+@media (max-width: 1160px) {
+  .thirdBlockAbout__loyaut--container__text p {
+    font-size: 14px;
+    max-width: 227px;
+  }
+}
 @media (max-width: 768px) {
   .thirdBlockAbout__loyaut--container__text p {
-    font-size: 18px;
+    max-width: none;
+    margin: 0;
   }
 }
 .thirdBlockAbout__loyaut--container__insideContainer {
   border-radius: 20px 20px 0 0;
   background: #141414;
   margin-top: 65px;
-  adding: 32px 50px 0;
+  padding: 32px 50px 0;
+}
+@media (max-width: 1160px) {
+  .thirdBlockAbout__loyaut--container__insideContainer {
+    margin-top: 41px;
+    padding: 32px 38px 10px;
+  }
+}
+@media (max-width: 768px) {
+  .thirdBlockAbout__loyaut--container__insideContainer {
+    padding: 29px 23px 0;
+  }
 }
 .thirdBlockAbout__loyaut--container__insideContainer--topContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .thirdBlockAbout__loyaut--container__insideContainer--topContainer {
+    align-items: baseline;
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 .thirdBlockAbout__loyaut--container__insideContainer--topContainer__left p.date {
   color: #5B5B5B;
@@ -67,6 +109,13 @@
   font-weight: 400;
   line-height: 150%;
   margin: 0;
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .thirdBlockAbout__loyaut--container__insideContainer--topContainer__left p.date {
+    font-size: 9px;
+    margin-bottom: 6px;
+  }
 }
 .thirdBlockAbout__loyaut--container__insideContainer--topContainer__left--numbers {
   display: flex;
@@ -82,6 +131,11 @@
   line-height: 100%;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .thirdBlockAbout__loyaut--container__insideContainer--topContainer__left--numbers h3 {
+    font-size: 27px;
+  }
+}
 .thirdBlockAbout__loyaut--container__insideContainer--topContainer__left--numbers__procent {
   display: flex;
   align-items: center;
@@ -91,6 +145,16 @@
   gap: 5px;
   margin-bottom: 5px;
 }
+@media (max-width: 768px) {
+  .thirdBlockAbout__loyaut--container__insideContainer--topContainer__left--numbers__procent {
+    padding: 0 4px;
+  }
+}
+@media (max-width: 768px) {
+  .thirdBlockAbout__loyaut--container__insideContainer--topContainer__left--numbers__procent img {
+    max-width: 5px;
+  }
+}
 .thirdBlockAbout__loyaut--container__insideContainer--topContainer__left--numbers__procent p.procent {
   color: #04FF87;
   font-size: 16.57px;
@@ -99,6 +163,11 @@
   font-weight: 400;
   line-height: 150%;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .thirdBlockAbout__loyaut--container__insideContainer--topContainer__left--numbers__procent p.procent {
+    font-size: 10px;
+  }
 }
 .thirdBlockAbout__loyaut--container__insideContainer--topContainer__right {
   display: flex;
@@ -115,6 +184,12 @@
   border: 1px solid #1E1E1E;
   border-radius: 50px;
   padding: 7px 10px;
+}
+@media (max-width: 768px) {
+  .thirdBlockAbout__loyaut--container__insideContainer--topContainer__right .box {
+    font-size: 10px;
+    padding: 7px 13px;
+  }
 }
 .thirdBlockAbout__loyaut--container__insideContainer--bottomContainer {
   margin-top: 30px;
