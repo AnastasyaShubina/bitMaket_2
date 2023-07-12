@@ -2,6 +2,8 @@ import 'normalize.css/normalize.css'
 import '../sass/style.sass'
 import { onDocumentReady, importAll } from './functions.js'
 import { modal } from './modal'
+import { sliderCharts } from './sliderCharts'
+import { sliderAbout } from './sliderAbout'
 
 
 importAll(
@@ -17,3 +19,6 @@ onDocumentReady(function () {
 })
 
 modal()
+
+sliderCharts()
+sliderAbout()
