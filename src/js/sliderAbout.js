@@ -2,7 +2,7 @@ export const sliderAbout = () => {
   const swiper = new Swiper(".sliderAbout", {
     centeredSlides: true,
     spaceBetween: 30,
-    slidesPerView: 0.9,
+    slidesPerView: 1,
   });
 
   const btn1Slider = document.querySelector('.btn1-slider')

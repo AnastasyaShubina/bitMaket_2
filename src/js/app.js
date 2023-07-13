@@ -4,6 +4,7 @@ import { onDocumentReady, importAll } from './functions.js'
 import { modal } from './modal'
 import { sliderCharts } from './sliderCharts'
 import { sliderAbout } from './sliderAbout'
+import { animation, animation2 } from './animation'
 
 
 importAll(
@@ -18,7 +19,17 @@ onDocumentReady(function () {
   console.log('hello.')
 })
 
+
+
+var currentPageUrl = window.location.href;
+if (currentPageUrl.includes('about')) {
+  sliderAbout()
+  animation()
+  animation2()
+} else {
+  sliderCharts()
+}
+
 modal()
 
-sliderCharts()
-sliderAbout()
+// animation2()
