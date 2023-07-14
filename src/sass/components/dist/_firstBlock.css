@@ -46,6 +46,7 @@
 }
 @media (max-width: 768px) {
   .firstBlock--container__text p {
+    margin-top: 25px;
     font-size: 18px;
   }
 }
@@ -60,7 +61,7 @@
 }
 @media (max-width: 1185px) {
   .firstBlock--container__schedule {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
@@ -69,18 +70,41 @@
     margin-top: 20px;
   }
 }
+.firstBlock--container__schedule img {
+  height: 100%;
+  width: 100%;
+}
 .firstBlock--container__schedule--buttons {
   gap: 18px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  position: relative;
+  z-index: 99;
 }
 @media (max-width: 1185px) {
   .firstBlock--container__schedule--buttons {
     flex-direction: row;
     justify-content: space-between;
     gap: 12px;
+    width: 100%;
   }
+}
+@media (max-width: 768px) {
+  .firstBlock--container__schedule--buttons {
+    flex-direction: column;
+  }
+}
+.firstBlock--container__schedule--buttons__bgButtons.active {
+  background: linear-gradient(208deg, #1A1919 0%, #161616 100%);
+}
+.firstBlock--container__schedule--buttons__bgButtons.active .Mark-up {
+  background-color: #0FFBE4;
+}
+.firstBlock--container__schedule--buttons__bgButtons.active .Accumulation {
+  background-color: #FF7A00;
+}
+.firstBlock--container__schedule--buttons__bgButtons.active .Mark-down {
+  background-color: #FF3628;
 }
 .firstBlock--container__schedule--buttons__bgButtons {
   border-radius: 8px;
@@ -115,6 +139,7 @@
   font: inherit;
   color: inherit;
   cursor: pointer;
+  transition: 0.3s;
 }
 @media (max-width: 768px) {
   .firstBlock--container__schedule--buttons__bgButtons .Mark-up {
@@ -130,12 +155,14 @@
   line-height: 10px;
   color: #fff;
 }
-.firstBlock--container__schedule--buttons__bgButtons .Mark-up:hover,
-.firstBlock--container__schedule--buttons__bgButtons .Mark-up:focus {
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up:hover {
   border-color: currentColor;
   border: 1px solid #0FFBE4;
+  transition: 0.3s;
 }
-.firstBlock--container__schedule--buttons__bgButtons .Mark-up:hover p,
+.firstBlock--container__schedule--buttons__bgButtons .Mark-up:focus {
+  background-color: #0FFBE4;
+}
 .firstBlock--container__schedule--buttons__bgButtons .Mark-up:focus p {
   color: #fff;
 }
@@ -157,6 +184,7 @@
   font: inherit;
   color: inherit;
   cursor: pointer;
+  transition: 0.3s;
 }
 @media (max-width: 768px) {
   .firstBlock--container__schedule--buttons__bgButtons .Accumulation {
@@ -172,10 +200,13 @@
   line-height: 10px;
   color: #fff;
 }
-.firstBlock--container__schedule--buttons__bgButtons .Accumulation:hover,
-.firstBlock--container__schedule--buttons__bgButtons .Accumulation:focus {
+.firstBlock--container__schedule--buttons__bgButtons .Accumulation:hover {
   border-color: currentColor;
   border: 1px solid #FF7A00;
+  transition: 0.3s;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Accumulation:focus {
+  background-color: #FF7A00;
 }
 .firstBlock--container__schedule--buttons__bgButtons .Accumulation:active {
   border-color: currentColor;
@@ -203,6 +234,7 @@
   font: inherit;
   color: inherit;
   cursor: pointer;
+  transition: 0.3s;
 }
 @media (max-width: 768px) {
   .firstBlock--container__schedule--buttons__bgButtons .Mark-down {
@@ -218,10 +250,13 @@
   line-height: 10px;
   color: #fff;
 }
-.firstBlock--container__schedule--buttons__bgButtons .Mark-down:hover,
-.firstBlock--container__schedule--buttons__bgButtons .Mark-down:focus {
+.firstBlock--container__schedule--buttons__bgButtons .Mark-down:hover {
   border-color: currentColor;
   border: 1px solid #FF3628;
+  transition: 0.3s;
+}
+.firstBlock--container__schedule--buttons__bgButtons .Mark-down:focus {
+  background-color: #FF3628;
 }
 .firstBlock--container__schedule--buttons__bgButtons .Mark-down:active {
   border-color: currentColor;
@@ -257,6 +292,7 @@
   margin: 0;
   height: 50px;
   cursor: pointer;
+  transition: 0.3s;
 }
 @media (max-width: 768px) {
   .firstBlock--container__bottomContainer .tryDemo {
@@ -273,12 +309,13 @@
   margin: 0;
   padding: 20px 40px;
 }
-.firstBlock--container__bottomContainer .tryDemo:hover,
+.firstBlock--container__bottomContainer .tryDemo:hover {
+  transition: 0.3s;
+}
 .firstBlock--container__bottomContainer .tryDemo:focus {
   border-color: currentColor;
   background-color: #fff;
 }
-.firstBlock--container__bottomContainer .tryDemo:hover p,
 .firstBlock--container__bottomContainer .tryDemo:focus p {
   color: #000;
 }

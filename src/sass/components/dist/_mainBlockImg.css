@@ -1,7 +1,17 @@
 .mainBlockImg--img .bottomImg {
   left: 0;
   max-width: 100%;
-  margin-top: -260px;
+  margin-top: -340px;
+}
+@media (max-width: 1350px) {
+  .mainBlockImg--img .bottomImg {
+    margin-top: -310px;
+  }
+}
+@media (max-width: 1250px) {
+  .mainBlockImg--img .bottomImg {
+    margin-top: -280px;
+  }
 }
 @media (max-width: 1080px) {
   .mainBlockImg--img .bottomImg {
@@ -10,7 +20,7 @@
 }
 @media (max-width: 768px) {
   .mainBlockImg--img .bottomImg {
-    margin-top: -200px;
+    margin-top: -140px;
     max-width: 195%;
     margin-left: -207px;
   }

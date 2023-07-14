@@ -44,6 +44,7 @@
   padding: 0;
   cursor: pointer;
   z-index: 1;
+  transition: 0.3s;
 }
 @media (max-width: 855px) {
   .contactUs--container__content .contactUs {
@@ -64,13 +65,14 @@
   font-weight: 500;
   margin: 0;
 }
-.contactUs--container__content .contactUs:hover,
+.contactUs--container__content .contactUs:hover {
+  transition: 0.3s;
+}
 .contactUs--container__content .contactUs:focus {
   border-color: currentColor;
   background-color: #000;
   border: 1px solid #fff;
 }
-.contactUs--container__content .contactUs:hover p,
 .contactUs--container__content .contactUs:focus p {
   color: #fff;
 }

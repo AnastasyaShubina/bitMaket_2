@@ -39,14 +39,19 @@
                     font-family: 'Milligram'
                     font-weight: 500
                     margin: 0
-                .contactUs:hover,
+                .contactUs:hover
+                    transition: 0.3s
+                    background-color: #fff
+                    p 
+                        color: #000
+
                 .contactUs:focus
                     border-color: currentColor
-                    background-color: #000
+                    background-color: #fff
                     p
-                        color: #fff
+                        color: #000
                 .contactUs:active
-                    background-color: #2E2E2E
+                    background-color: #fff
         &__menuMobile
             display: none
             @media (max-width: 1160px)
@@ -93,7 +98,8 @@
                     font-family: 'Milligram'
                     font-weight: 500
                     margin: 0
-                .contactUs:hover,
+                .contactUs:hover
+                    transition: 0.3s
                 .contactUs:focus
                     border-color: currentColor
                     background-color: #fff

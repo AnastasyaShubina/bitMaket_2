@@ -1,8 +1,14 @@
 .mainBlockAbout {
-  max-width: 1153px;
   margin: auto;
 }
 .mainBlockAbout--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+.mainBlockAbout--container__op {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,11 +90,12 @@
     padding: 18px 51px;
   }
 }
-.mainBlockAbout--container .tryDemo:hover,
+.mainBlockAbout--container .tryDemo:hover {
+  transition: 0.3s;
+}
 .mainBlockAbout--container .tryDemo:focus {
   background-color: #2E2E2E;
 }
-.mainBlockAbout--container .tryDemo:hover p,
 .mainBlockAbout--container .tryDemo:focus p {
   color: #fff;
 }
@@ -101,7 +108,8 @@
 }
 .mainBlockAbout--container__img {
   z-index: -2;
-  margin-top: -300px;
+  position: relative;
+  top: -400px;
 }
 @media (max-width: 1160px) {
   .mainBlockAbout--container__img {

@@ -87,9 +87,17 @@
   width: 100%;
   text-align: center;
 }
+.whiteBlock--howItWork__container--slider__tabs--item:hover a {
+  color: #000;
+  transform: 0.3s;
+}
+.whiteBlock--howItWork__container--slider__tabs--item:focus a {
+  color: #fff;
+}
 @media (max-width: 768px) {
   .whiteBlock--howItWork__container--slider__tabs--item {
     width: auto;
+    padding: 14px 21px;
   }
 }
 .whiteBlock--howItWork__container--slider__tabs--item a {
@@ -100,6 +108,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: 122%;
+}
+@media (max-width: 768px) {
+  .whiteBlock--howItWork__container--slider__tabs--item a {
+    line-height: 150%;
+  }
 }
 .whiteBlock--howItWork__container--slider__display {
   padding: 80px;
