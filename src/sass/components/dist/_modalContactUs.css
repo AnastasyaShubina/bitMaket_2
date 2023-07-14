@@ -1,0 +1,82 @@
+@keyframes bounce {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.modalContactUs--window {
+  border-radius: 40px;
+  background: #000;
+  padding: 61px 75px 88px;
+  max-width: 520px;
+  margin: auto;
+}
+.modalContactUs--window__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.modalContactUs--window__content h4 {
+  color: #FFF;
+  text-align: center;
+  font-size: 40px;
+  font-family: Milligram;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0;
+}
+.modalContactUs--window__content--buttons {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  cursor: pointer;
+}
+.modalContactUs--window__content--buttons .joinOurTg {
+  border-radius: 4px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  padding: 20px 32px;
+  gap: 10px;
+  max-height: 50px;
+}
+.modalContactUs--window__content--buttons .joinOurTg svg path {
+  fill: #000;
+}
+.modalContactUs--window__content--buttons .joinOurTg p {
+  color: #000;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 14px;
+  font-family: Milligram;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px;
+  margin: 0;
+}
+.modalContactUs--window__content--buttons .ContactUsByEmail {
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  background-color: #000;
+  cursor: pointer;
+  max-height: 50px;
+}
+.modalContactUs--window__content--buttons .ContactUsByEmail p {
+  color: #FFF;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 14px;
+  font-family: Milligram;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px;
+  padding: 20px 32px;
+  margin: 0;
+}
