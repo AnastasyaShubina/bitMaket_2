@@ -4,14 +4,19 @@
             h2 Seeing is believing, after all.
             p Test the software, experiment with different options, and see the results for yourself.
         .firstBlock--container__schedule
-            .swiper.sliderCharts
-                .swiper-wrapper 
-                    div.swiper-slide
-                        img(src="./images/ChartGreen.svg" alt="")
-                    div.swiper-slide
-                        img(src="./images/ChardNonRed.svg" alt="")
-                    div.swiper-slide
-                        img(src="./images/ChartRed.svg" alt="")
+            .sliderCharts(style="width: 100%")
+                <div class="chart-container">
+                    <svg id="chart" width="800" height="400"></svg>
+                </div>
+                //- .swiper-wrapper 
+                //-     div.swiper-slide
+                //-         <canvas id="myChart"></canvas>
+                //-     //- <script src="script.js"></script>
+                //-         //- img(src="./images/ChartGreen.svg" alt="")
+                //-     div.swiper-slide
+                //-         img(src="./images/ChardNonRed.svg" alt="")
+                //-     div.swiper-slide
+                //-         img(src="./images/ChartRed.svg" alt="")
             .firstBlock--container__schedule--buttons 
                 .firstBlock--container__schedule--buttons__bgButtons.btn1-slider
                     button.Mark-up

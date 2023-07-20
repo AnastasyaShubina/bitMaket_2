@@ -4,22 +4,15 @@ export const animation = () => {
     const canvasScrollClip = new CanvasScrollClip(
         document.querySelector('.mainBlockAbout--container__img--animation'),
         {
-            framePath: '/images/animationDesctop/1_screen/000001.jpg',
+            framePath: './images/animationDesctop/1_screen/000001.jpg',
             frameCount: 303,
             scrollArea: 2900,
             identifier: ''
         }
     )
-
     const bg = document.querySelector('.mainBlockAbout--container__op')
-
     canvasScrollClip.events.on('viewport.scroll', function (scrollTop) {
         bg.style.opacity = Math.min(1, Math.max(0, 1 - scrollTop / 380))
-        // if (+bg.style.opacity === 0) {
-        //     bg.style.display = 'none'
-        // } else {
-        //     bg.style.display = 'block'
-        // }
     })
 
 }
@@ -28,9 +21,9 @@ export const animation2 = () => {
     const canvasScrollClip2 = new CanvasScrollClip(
         document.querySelector('.secondBlockAbout--container__schedule--animation'),
         {
-            framePath: '/images/animationDesctop/2_screen/img00000.jpg',
+            framePath: './images/animationDesctop/2_screen/img00000.jpg',
             frameCount: 150,
-            scrollArea: 3800,
+            scrollArea: 6000,
             identifier: ''
         }
     )
