@@ -1,7 +1,7 @@
 export const sliderCharts = () => {
   const startDate = new Date();
   const numPoints = 30;
-  const initialPrice = 10;
+  const initialPrice = 0.0000015;
   const volatility = 0.4;
   const updateInterval = 600;
   const duration = 0;
@@ -15,7 +15,7 @@ export const sliderCharts = () => {
   const btn1Slider = document.querySelector('.btn1-slider')
   const btn2Slider = document.querySelector('.btn2-slider')
   const btn3Slider = document.querySelector('.btn3-slider')
-  
+
   let count = 0
   let dataChart = [];
   let pricesData = generatePriceData(startDate, numPoints, initialPrice, volatility, "accumulation");
@@ -28,30 +28,11 @@ export const sliderCharts = () => {
   btn2Slider.className = 'firstBlock--container__schedule--buttons__bgButtons btn2-slider active'
 
   // Generate initial data points
-  for (let i = 0; i < numPoints; i++) {
-    data.push(initialPrice);
-  }
+  data.push(...pricesData);
 
   const g = svg
     .append("g")
     .attr("transform", `translate(${margin.left},${margin.top})`);
-
-  const path = g
-    .append("path")
-    .datum(data)
-    .attr("class", "line")
-    .attr("fill", "none")
-    .attr("stroke-width", "2px")
-    .attr("stroke", "#FF7A00");
-
-  xScale.domain([0, numPoints - 1]);
-  yScale.domain([d3.min(data), d3.max(data)]);
-
-  g.append("g")
-    .attr("class", "x-axis")
-    .attr("transform", `translate(0,${innerHeight})`)
-    .attr("color", `#3D3D3D`)
-    .call(d3.axisBottom(xScale));
 
   g.append("g")
     .attr("class", "y-axis")
@@ -65,13 +46,18 @@ export const sliderCharts = () => {
 
   g.append("g")
     .attr("class", "grid")
-    .attr("transform", `translate(0,${innerHeight})`)
-    .call(d3.axisBottom(xScale).tickSize(-innerHeight).tickFormat(''))
-
-  g.append("g")
-    .attr("class", "grid")
     .call(d3.axisLeft(yScale).tickSize(-innerWidth).tickFormat(''))
 
+  const path = g
+    .append("path")
+    .datum(data)
+    .attr("class", "line")
+    .attr("fill", "none")
+    .attr("stroke-width", "2px")
+    .attr("stroke", "#FF7A00");
+
+  xScale.domain([0, numPoints - 1]);
+  yScale.domain([d3.min(data), d3.max(data)]);
 
   function addDataPoint(pricesData) {
     data.push(pricesData[count]);

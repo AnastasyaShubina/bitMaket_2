@@ -5,6 +5,7 @@ import { modal } from './modal'
 import { sliderCharts } from './sliderCharts'
 import { sliderAbout } from './sliderAbout'
 import { animation, animation2 } from './animation'
+import { modalContactUs } from './modalContactUs'
 
 
 importAll(
@@ -31,5 +32,6 @@ if (currentPageUrl.includes('about')) {
 }
 
 modal()
+modalContactUs()
 
 // animation2()
