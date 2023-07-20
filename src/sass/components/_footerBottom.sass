@@ -22,16 +22,28 @@
                 justify-content: space-between
             &--tg 
                 display: flex
-                img.tg
-                p 
-                    color: #FFF
-                    text-align: center
-                    font-size: 14px
-                    font-family: Milligram
-                    font-style: normal
-                    font-weight: 500
-                    line-height: normal
-            a
+                gap: 10px
+                align-items: center
+                cursor: pointer
+                &:hover
+                    svg
+                        path
+                            fill: #00E3E3
+                            transition: 0.3s
+                    .textTg
+                        color: #00E3E3
+                        transition: 0.3s
+                .textTg
+                        color: #FFF
+                        text-align: center
+                        font-size: 14px
+                        font-family: Milligram
+                        font-style: normal
+                        font-weight: 500
+                        line-height: normal
+                        transition: 0.3s
+                
+            .textMail
                 color: #FFF
                 text-align: right
                 font-size: 14px
@@ -40,3 +52,11 @@
                 font-weight: 500
                 line-height: normal
                 text-decoration: none
+                transition: 0.3s
+            .textMail:hover
+                transition: 0.3s
+                color: #00E3E3
+            .textMail:focus
+                color: #00E3E3
+            .textMail:active
+                color: #00E3E3

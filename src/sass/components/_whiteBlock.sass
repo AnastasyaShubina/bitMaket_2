@@ -55,6 +55,7 @@
                         background: #000
                         a
                             color: #fff
+                        
                     &--item
                         padding: 24px 51px
                         cursor: pointer
@@ -62,6 +63,14 @@
                         border-radius: 7px
                         width: 100%
                         text-align: center
+                        &:hover
+                            a 
+                                color: #000
+                                transform: 0.3s
+                        &:focus
+                            a
+                                color: #fff
+                        
                         @media (max-width: 1160px)
                         @media (max-width: 768px)
                             width: auto
@@ -76,6 +85,12 @@
                             line-height: 122%
                             @media (max-width: 768px)
                                 line-height: 150%
+                            // &:hover
+                            //     color: #000
+                            //     transform: 0.3s
+                            // &:focus
+                            //     color: #fff
+
 
                 &__display
                     padding: 80px
