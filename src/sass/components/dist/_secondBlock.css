@@ -1,0 +1,40 @@
+.secondBlock {
+  background-color: #101010;
+  border-radius: 40px 40px 0 0;
+}
+.secondBlock--container {
+  max-width: 1153px;
+  margin: -40px auto;
+  padding: 120px 20px 0px 20px;
+}
+@media (max-width: 768px) {
+  .secondBlock--container {
+    padding: 60px 20px;
+  }
+}
+.secondBlock--container__content h2 {
+  color: #FFF;
+  font-size: 42px;
+  font-family: Milligram;
+  font-weight: 500;
+  line-height: 120%;
+  max-width: 543px;
+  margin: 0;
+}
+@media (max-width: 1160px) {
+  .secondBlock--container__content h2 {
+    max-width: 389px;
+  }
+}
+@media (max-width: 768px) {
+  .secondBlock--container__content h2 {
+    font-size: 36px;
+    max-width: 312px;
+  }
+}
+.secondBlock--container__content--img {
+  margin-top: 60px;
+}
+.secondBlock--container__content--img img {
+  width: 100%;
+}
