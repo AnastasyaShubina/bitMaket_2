@@ -6,7 +6,8 @@
         margin: -40px auto 
         padding: 120px 20px 0px 20px 
         @media (max-width: 768px)
-            padding: 60px 20px 
+            padding: 80px 34px 48px 34px 
+
         &__content
             h2 
                 
@@ -25,5 +26,16 @@
 
             &--img
                 margin-top: 60px
+                @media (max-width: 768px)
+                    margin-top: 34px
+                    overflow-x: auto
+                    white-space: nowrap
+
                 img
                     width: 100%
+                    @media (max-width: 768px)
+                        width: auto
+                        max-height: 677px
+                        display: flex
+                        flex-direction: row
+                        

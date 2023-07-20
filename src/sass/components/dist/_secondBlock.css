@@ -9,7 +9,7 @@
 }
 @media (max-width: 768px) {
   .secondBlock--container {
-    padding: 60px 20px;
+    padding: 80px 34px 48px 34px;
   }
 }
 .secondBlock--container__content h2 {
@@ -35,6 +35,21 @@
 .secondBlock--container__content--img {
   margin-top: 60px;
 }
+@media (max-width: 768px) {
+  .secondBlock--container__content--img {
+    margin-top: 34px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
 .secondBlock--container__content--img img {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .secondBlock--container__content--img img {
+    width: auto;
+    max-height: 677px;
+    display: flex;
+    flex-direction: row;
+  }
 }
