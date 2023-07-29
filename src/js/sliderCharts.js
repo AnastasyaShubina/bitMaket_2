@@ -1,4 +1,7 @@
 export const sliderCharts = () => {
+  const myBlock = document.querySelector('.chart-container');
+  const blockWidth = myBlock.getBoundingClientRect().width;
+
   const startDate = new Date();
   const numPoints = 30;
   const initialPrice = 0.0000015;
@@ -6,6 +9,7 @@ export const sliderCharts = () => {
   const updateInterval = 600;
   const duration = 0;
   const svg = d3.select("#chart");
+  svg.attr('width', blockWidth);
   const width = +svg.attr("width");
   const height = +svg.attr("height");
   const margin = { top: 20, right: 30, bottom: 30, left: 40 };

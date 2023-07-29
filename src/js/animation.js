@@ -4,7 +4,7 @@ export const animation = () => {
     const canvasScrollClip = new CanvasScrollClip(
         document.querySelector('.mainBlockAbout--container__img--animation'),
         {
-            framePath: './images/animationDesctop/1_screen/000001.jpg',
+            framePath: window.innerWidth < 768 ? './images/animationMobile/1_screen/img00000.jpg' : window.innerWidth < 1024 ? './images/animationPad/1_screen/img00000.jpg' : './images/animationDesctop/1_screen/000001.jpg',
             frameCount: 303,
             scrollArea: 2900,
             identifier: ''
@@ -21,9 +21,9 @@ export const animation2 = () => {
     const canvasScrollClip2 = new CanvasScrollClip(
         document.querySelector('.secondBlockAbout--container__schedule--animation'),
         {
-            framePath: './images/animationDesctop/2_screen/img00000.jpg',
+            framePath: window.innerWidth < 768 ? './images/animationMobile/2_screen/img00000.jpg' : window.innerWidth < 1024 ? './images/animationPad/2_screen/img00000.jpg' : './images/animationDesctop/2_screen/img00000.jpg',
             frameCount: 150,
-            scrollArea: 6000,
+            scrollArea:  window.innerWidth < 768 ? 9000 : 6000,
             identifier: ''
         }
     )
