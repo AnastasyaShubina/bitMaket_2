@@ -14,7 +14,7 @@ export const modalContactUs = () => {
     modalContactUs.addEventListener('click', (e) => {
       if (e.target === modalContactUs || e.target === modalContactUsCloseBtn) {
         modalContactUs.style.display = "none";
-        html.style.overflow = 'auto';
+        html.style.overflow = 'initial';
       }
     });
   };

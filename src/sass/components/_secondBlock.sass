@@ -1,17 +1,21 @@
+.data
+    font: 10px serif
+    fill: #6A6A6A
+
 .secondBlock
     background-color: #101010
     border-radius: 40px 40px 0 0
     &--container
         max-width: 1153px
-        margin: -40px auto 
-        padding: 120px 20px 0px 20px 
+        margin: -40px auto
+        padding: 120px 20px 0px 20px
         @media (max-width: 768px)
-            padding: 80px 34px 48px 34px 
+            padding: 80px 34px 48px 34px
 
         &__content
-            h2 
-                
-                color: #FFF 
+            h2
+
+                color: #FFF
                 font-size: 42px
                 font-family: Milligram
                 font-weight: 500
@@ -31,11 +35,10 @@
                     overflow-x: auto
                     white-space: nowrap
 
-                img
+                svg
                     width: 100%
                     @media (max-width: 768px)
                         width: auto
                         max-height: 677px
                         display: flex
                         flex-direction: row
-                        
