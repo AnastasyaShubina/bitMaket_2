@@ -1,5 +1,8 @@
+
 .firstBlock
     background-color: #000
+    @media (max-width: 768px)
+        position: relative
     &--container
         max-width: 1153px
         margin: -20px auto
@@ -19,10 +22,10 @@
                 font-family: Milligram
                 font-weight: 500
                 line-height: 120%
-                max-width: 350px
+                max-width: 360px
                 margin: 0
                 @media (max-width: 768px)
-                    max-width: 304px
+                    max-width: 315px
                     font-size: 36px
 
             p
@@ -48,6 +51,8 @@
             @media (max-width: 768px)
                 padding: 30px
                 margin-top: 20px
+                canvas
+                    height: 250px!important
             img
                 height: 100%
                 width: 100%

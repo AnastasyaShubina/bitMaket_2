@@ -4,19 +4,14 @@
             h2 Seeing is believing, after all.
             p Test the software, experiment with different options, and see the results for yourself.
         .firstBlock--container__schedule
-            .sliderCharts(style="width: 100%")
-                <div class="chart-container">
-                    <svg id="chart" width="814" height="558"></svg>
-                </div>
-                //- .swiper-wrapper 
-                //-     div.swiper-slide
-                //-         <canvas id="myChart"></canvas>
-                //-     //- <script src="script.js"></script>
-                //-         //- img(src="./images/ChartGreen.svg" alt="")
-                //-     div.swiper-slide
-                //-         img(src="./images/ChardNonRed.svg" alt="")
-                //-     div.swiper-slide
-                //-         img(src="./images/ChartRed.svg" alt="")
+            .swiper.sliderCharts
+                .swiper-wrapper 
+                    div.swiper-slide
+                        <canvas id="myChart"></canvas>
+                    div.swiper-slide
+                        <canvas id="myChart2"></canvas>
+                    div.swiper-slide
+                        <canvas id="myChart3"></canvas>
             .firstBlock--container__schedule--buttons 
                 .firstBlock--container__schedule--buttons__bgButtons.btn1-slider
                     button.Mark-up
@@ -29,7 +24,7 @@
                         p Mark-down
         .firstBlock--container__bottomContainer 
             p We've developed a market-making algorithm that not only creates eye-catching token markets but also generates profits for you from the trades.
-            button.tryDemo 
-                p Try demo
+            //- button.tryDemo 
+            //-     p Try demo
 
 

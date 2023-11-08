@@ -9,13 +9,16 @@ html.no-js(lang='en')
 
     body.black
         //- Header 
-        include ../includes/modalContactUs.pug
-        include ../includes/headerBlack.pug
-        include ../includes/mainBlockAbout.pug
-        include ../includes/secondBlockAbout.pug
-        include ../includes/thirdBlockAbout.pug
+        .change-black-element
+            include ../includes/modalContactUs.pug
+            include ../includes/headerWhite.pug
+            include ../includes/mainBlockAbout.pug
+            include ../includes/secondBlockAbout.pug
+            include ../includes/thirdBlockAbout.pug
+
         include ../includes/whiteBlock.pug
-        include ../includes/team.pug
-        include ../includes/contactUs.pug
-        include ../includes/footerBottom.pug
-        include ../includes/modal.pug
+        //- include ../includes/team.pug
+        .change-black-element
+            include ../includes/contactUs.pug
+            include ../includes/footer.pug
+            include ../includes/modal.pug

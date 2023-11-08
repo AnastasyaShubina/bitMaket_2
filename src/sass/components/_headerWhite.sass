@@ -1,15 +1,40 @@
-.container
-    margin: 0 20px
+.blackHead
+    .headerWhite
+        &--container
+            &__logo
+                svg
+                    >path
+                        fill: #fff
+            &__menu
+                a
+                    color: #fff
+            &__menuMobile
+                svg
+                    path
+                        fill: #fff
+            .contactUs
+                border: 1px solid #fff
+                p
+                    color: #fff
+
 .headerWhite
-    max-width: 1153px
-    margin: auto
+    position: fixed
+    top: 0
+    z-index: 99999
+    width: 100vw
+    backdrop-filter: blur(25px)
+    background: linear-gradient(180deg, rgba(204, 204, 204, 0.10) 0%, rgba(204, 204, 204, 0.01) 100%)
     &--container
-        margin: 47px 20px 0 30px
+        max-width: 1153px
+        padding: 20px 0
         display: flex
+        margin: auto
         justify-content: space-between
         @media (max-width: 1160px)
+            padding: 20px 25px
         @media (max-width: 768px)
             margin: 0px
+
         &__logo
             .headerWhite--container__logo--img
         &__menu
@@ -42,7 +67,7 @@
                 .contactUs:hover
                     transition: 0.3s
                     background-color: #fff
-                    p 
+                    p
                         color: #000
 
                 .contactUs:focus
