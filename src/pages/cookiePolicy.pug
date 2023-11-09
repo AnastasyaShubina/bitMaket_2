@@ -1,0 +1,32 @@
+doctype html
+html.no-js(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible' content='ie=edge')
+        title Cookie Policy - Bit Maker 
+        link( rel="icon" href="./images/favicon.png" type="image/x-icon")
+        meta(name='description' content='Track, trade, discover, analyse, share and more all on one platform')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+
+    body.black
+        //- Header 
+        .change-black-element
+            include ../includes/modalContactUs.pug
+            include ../includes/headerWhite.pug
+            include ../includes/components/policy.pug
+            +policy(
+                'Cookie Policy', 
+                'By accessing this website and any materials presented herein (the "Site"), you agree to the following terms and conditions pertaining to the use of the Site. Jump Trading Group, including Jump Operations, LLC and its subsidiaries and affiliates (collectively, “Company”) reserves the right to change the terms, conditions and notices under which this Site is offered without notice at any time. Each use of the Site constitutes your agreement to be bound by the then-current terms and conditions set forth in these Terms of Use. The Terms of Use incorporates the Privacy Policy.', 
+                'cookiePolicy', 
+                {title: '1. LIMITED LICENSE', descript: 'Nothing contained in these Terms of Use or the Site itself grants or will be construed to grant to you or any third party any title or interest in or any license or right to use or reproduce, any image, text, software, code, trademark, logo or service mark contained in the Site, including without limitation the names or logos of the Company. The Company reserves, and will enforce to the fullest extent possible, all rights that it may have with respect to copyright and trademark ownership of all material contained in the Site. The Company grants you a limited, nonexclusive license to display and otherwise use portions of the Site solely for your own private, non-commercial informational purposes only, and to print pages from the Site only in connection with that use. You may not modify, distribute, transmit, perform, reproduce, publish, license, create derivative works from, transfer or sell any text, graphics, logos and other source-identifying symbols, designs, icons, images, or other information, software or code obtained from the Site.'},
+                {title: '2. NO WARRANTY', descript: 'THE COMPANY AND ITS RESPECTIVE OFFICERS, MANAGERS, DIRECTORS, PRINCIPALS, AGENTS AND EMPLOYEES MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, REGARDING THE ACCURACY, RELIABILITY, COMPLETENESS, SUITABILITY OR OTHER CHARACTERISTICS OF THE INFORMATION AND MATERIALS CONTAINED ON OR PRESENTED THROUGH THE SITE. ANY CONTENT OF THE SITE IS SUBJECT TO CHANGE WITHOUT NOTICE. ALL SUCH INFORMATION AND MATERIALS ARE PROVIDED "AS IS", WITHOUT ANY WARRANTY OF ANY KIND. THE COMPANY HEREBY FURTHER DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO SUCH INFORMATION AND MATERIALS, INCLUDING ALL IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT AND AVAILABILITY.'}, 
+                {title: '3. LIMITATION OF LIABILITY', descript: 'IN NO EVENT SHALL THE COMPANY, AND ITS RESPECTIVE OFFICERS, MANAGERS, DIRECTORS, PRINCIPALS, AGENTS AND EMPLOYEES BE LIABLE FOR ANY CLAIMS, LIABILITIES, LOSSES, COSTS OR DAMAGES, INCLUDING DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN ANY WAY CONNECTED WITH (I) THE USE OF OR INABILITY TO USE THE SITE OR WITH ANY DELAY IN USING THE SITE, OR (II) ANY INFORMATION AND MATERIALS OBTAINED THROUGH THE SITE, OR (III) OTHERWISE ARISING OUT OF THE USE OF THE SITE; IN ANY CASE WHETHER BASED ON THEORIES ARISING IN CONTRACT, TORT, STRICT LIABILITY OR OTHERWISE. SUCH LIMITATIONS APPLY EVEN IF THE COMPANY OR ANY OF ITS RESPECTIVE OFFICERS, DIRECTORS, PRINCIPALS, AGENTS OR EMPLOYEES HAVE BEEN ADVISED OF THE POSSIBILITY OF DAMAGES.'}, 
+                {title: '4. GENERAL', descript: 'If any provision of these Terms of Use is held to be invalid or unenforceable in any jurisdiction, then such provision shall be deemed modified to the minimum extent necessary so that such provision shall no longer be held to be invalid or unenforceable and these Terms of Use shall be interpreted so as to achieve the intent expressed herein to the greatest extent possible in the jurisdiction in question. Any such modification, invalidity or unenforceability shall be strictly limited both to such provision and to such jurisdiction.'}, 
+            )
+            include ../includes/footer.pug
+            include ../includes/modal.pug
+
+<script src="https://unpkg.com/d3-time-format@4.1.0/dist/d3-time-format.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>

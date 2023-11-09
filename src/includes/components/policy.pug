@@ -1,0 +1,13 @@
+mixin policy(title, descript, id, ...items)
+    .pulicy
+        .pulicy--container 
+            .pulicy--container__title 
+                h1= title
+            .pulicy--container__description
+                p= descript
+            .pulicy--container__body 
+                ul(id=id).pulicy--container__body--list
+                    each item in items
+                        li.pulicy--container__body--list__item
+                            h2= item.title
+                            p= item.descript
