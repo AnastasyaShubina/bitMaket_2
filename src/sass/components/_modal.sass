@@ -1,7 +1,10 @@
+@use '../variables'
+@use '../mixin'
+
 .modal
     width: 100%
     height: 100%
-    background-color: #fff
+    background-color: variables.$bg-white
     position: fixed
     bottom: 0px
     z-index: 98
@@ -20,40 +23,35 @@
                 a
                     text-decoration: none
                     h3
-                        color: #000
+                        color: variables.$font-black
                         text-align: center
-                        font-size: 32px
-                        font-family: Milligram
-                        font-style: normal
-                        font-weight: 500
+                        @include mixin.label-S
                         line-height: normal
             &--button
                 text-align: center
                 margin-top: 135px
                 .contactUs
                     border-radius: 4px
-                    border: 1px solid #000
+                    border: 1px solid variables.$bg-black
                     background-color: #ffffff00
                     padding: 0
                     cursor: pointer
 
                     p
                         padding: 16px 26px
-                        color: #000
+                        color: variables.$font-black
                         text-align: center
-                        font-size: 14px
-                        font-family: 'Milligram'
-                        font-weight: 500
+                        @include mixin.text-M
                         margin: 0
                 .contactUs:hover
                     transition: 0.3s
                 .contactUs:focus
                     border-color: currentColor
-                    background-color: #000
+                    background-color: variables.$bg-black
                     p
-                        color: #fff
+                        color: variables.$font-white
                 .contactUs:active
-                    background-color: #2E2E2E
+                    background-color: variables.$bg-black-60
 
                     p
             &--footer
@@ -66,18 +64,10 @@
                     img.tg
 
                     p
-                        color: #000
-                        font-size: 14px
-                        font-family: Milligram
-                        font-style: normal
-                        font-weight: 500
-                        line-height: normal
+                        color: variables.$font-black
+                        @include mixin.text-M
                 a
-                    color: #000
+                    color: variables.$font-black
                     text-align: right
-                    font-size: 14px
-                    font-family: Milligram
-                    font-style: normal
-                    font-weight: 500
-                    line-height: normal
+                    @include mixin.text-M
                     text-decoration: none

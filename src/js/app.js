@@ -23,26 +23,31 @@ onDocumentReady(function () {
   modalContactUs()
 })
 
-var currentPageUrl = window.location.href;
+var currentPageUrl = window.location.href
 if (currentPageUrl.includes('about')) {
   sliderAbout()
   animation()
   animation2()
   const dateId = document.querySelector('#date')
   const date = new Date()
-  dateId.textContent = date.toLocaleDateString('en-EN', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  }).toUpperCase()
-} else if (currentPageUrl.includes('cookiePolicy') || currentPageUrl.includes('privacyPolicy') || currentPageUrl.includes('termsOfUse')) {
+  dateId.textContent = date
+    .toLocaleDateString('en-EN', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    })
+    .toUpperCase()
+} else if (
+  currentPageUrl.includes('cookiePolicy') ||
+  currentPageUrl.includes('privacyPolicy') ||
+  currentPageUrl.includes('termsOfUse')
+) {
   const header = document.querySelector('.header')
   header.classList.add('blackHead')
 } else {
   sliderCharts()
   updateDates()
-  Chart.defaults.font.family = 'Milligram';
-  Chart.defaults.borderColor = '#3D3D3D';
-  Chart.defaults.color = '#3D3D3D';
+  Chart.defaults.font.family = 'Milligram'
+  Chart.defaults.borderColor = '#3D3D3D'
+  Chart.defaults.color = '#3D3D3D'
 }
-

@@ -1,3 +1,6 @@
+@use '../variables'
+@use '../mixin'
+
 .policyPages
 .pulicy
     padding-top: 215px
@@ -10,30 +13,20 @@
             margin: 25px
         &__title
             h1
-                color: var(--white-100, #FFF)
+                color: variables.$font-white
                 text-align: center
-                font-family: 'Milligram'
-                font-size: 72px
-                font-style: normal
-                font-weight: 500
-                line-height: 110%
+                @include mixin.label-XL
                 @media (max-width: 768px)
                     font-size: 72px
         &__description
             margin: 40px auto 30px
             max-width: 857px
             p
-                color: var(--bleck-20, #737373)
-                font-family: 'Milligram'
-                font-size: 16px
-                font-style: normal
-                font-weight: 400
-                line-height: 150%
-                @media (max-width: 768px)
-                    font-size: 14px
+                color: variables.$font-black-40
+                @include mixin.text-L
         &__body
             border-radius: 20px
-            background: var(--white-0, #0F0F0F)
+            background: variables.$bg-black-90
             padding: 40px 50px
             margin-bottom: 95px
             &--list
@@ -43,20 +36,10 @@
                     display: grid
                     gap: 10px
                     h2
-                        color: var(--white-untitled-white, #FFF)
-                        font-family: Milligram
-                        font-size: 36px
-                        font-style: normal
-                        font-weight: 700
-                        line-height: 140%
+                        color: variables.$font-white
+                        @include mixin.label-S
                         @media (max-width: 768px)
                             font-size: 33px
                     p
-                        color: var(--bleck-20, #737373)
-                        font-family: 'Milligram'
-                        font-size: 16px
-                        font-style: normal
-                        font-weight: 400
-                        line-height: 150%
-                        @media (max-width: 768px)
-                            font-size: 14px
+                        color: variables.$font-black-40
+                        @include mixin.text-L

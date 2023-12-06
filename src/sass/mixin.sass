@@ -1,10 +1,18 @@
+@mixin label-XL
+    font-size: 72px
+    font-family: Milligram
+    font-weight: 500
+    line-height: 120%
+    @media (max-width: 768px)
+        font-size: 62px
+
 @mixin label-L
     font-size: 54px
     font-family: Milligram
     font-weight: 500
     line-height: 120%
     @media (max-width: 768px)
-        font-size: 45px
+        font-size: 32px
 
 @mixin label-M
     font-size: 42px
@@ -12,7 +20,23 @@
     font-weight: 500
     line-height: 120%
     @media (max-width: 768px)
-        font-size: 36px
+        font-size: 32px
+
+@mixin label-S
+    font-size: 34px
+    font-family: Milligram
+    line-height: 130%
+    font-weight: 500
+    @media (max-width: 768px)
+        font-size: 28px
+
+@mixin label-XS
+    font-size: 28px
+    font-family: Milligram
+    line-height: 140%
+    font-weight: 500
+    @media (max-width: 768px)
+        font-size: 22px
 
 @mixin text-XL
     font-style: normal
@@ -21,7 +45,7 @@
     font-family: Milligram
     line-height: 150%
     @media (max-width: 768px)
-        font-size: 18px
+        font-size: 12px
 
 @mixin text-L
     font-style: normal
@@ -35,7 +59,6 @@
 @mixin text-M
     font-style: normal
     font-weight: 500
-    text-align: center
     font-size: 14px
     font-family: Milligram
     line-height: 150%

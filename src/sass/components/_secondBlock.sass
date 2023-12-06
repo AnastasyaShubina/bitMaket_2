@@ -1,9 +1,14 @@
+@use '../variables'
+@use '../mixin'
+
+.slideAnimation
+    margin-top: 100vh
 .data
     font: 10px serif
-    fill: #6A6A6A
+    fill: variables.$bg-black-50
 
 .secondBlock
-    background-color: #101010
+    background-color: variables.$bg-black-90
     border-radius: 40px 40px 0 0
     &--container
         max-width: 1153px
@@ -14,26 +19,30 @@
 
         &__content
             h2
-
-                color: #FFF
-                font-size: 42px
-                font-family: Milligram
-                font-weight: 500
-                line-height: 120%
+                color: variables.$font-white
+                @include mixin.label-M
                 max-width: 543px
                 margin: 0
                 @media (max-width: 1160px)
                     max-width: 389px
                 @media (max-width: 768px)
-                    font-size: 36px
                     max-width: 312px
 
             &--img
                 margin-top: 60px
+                &__header
+                    @media (max-width: 768px)
+                        position: absolute
+                        overflow: hidden
+                        overflow-x: scroll
+                        white-space: nowrap
+                        width: 100%
+                        left: 0
                 @media (max-width: 768px)
                     margin-top: 34px
                     overflow-x: auto
                     white-space: nowrap
+                    height: 610px
 
                 svg
                     width: 100%
@@ -42,3 +51,4 @@
                         max-height: 677px
                         display: flex
                         flex-direction: row
+                        margin-left: -34px

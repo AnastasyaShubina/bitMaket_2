@@ -1,12 +1,15 @@
+@use '../variables'
+@use '../mixin'
+
 .thirdBlockAbout
-    background-color: #000
+    background-color: variables.$bg-black
     &__loyaut
             max-width: 1153px
             margin: -20px auto 
-            padding: 128px 20px 
+            padding: 44px 20px 80px
             &--container
                 border-radius: 20px
-                background: #121212
+                background: variables.$bg-black-80
                 padding: 57px 66px 0px 66px
                 @media (max-width: 1160px)
                     padding: 46px 31px 0
@@ -23,11 +26,8 @@
                         align-items: baseline
                         gap: 20px
                     h2 
-                        color: #FFF
-                        font-size: 36px
-                        font-family: Milligram
-                        font-weight: 500
-                        line-height: 120%
+                        color: variables.$font-white
+                        @include mixin.label-S
                         max-width: 457px
                         margin: 0
                         @media (max-width: 1160px)
@@ -36,10 +36,8 @@
                         @media (max-width: 768px)
                             max-width: none
                     p 
-                        color: #A0A0A0
-                        font-size: 16px
-                        font-family: Milligram
-                        line-height: 150%
+                        color: variables.$font-black-30
+                        @include mixin.text-M
                         max-width: 404px
                         @media (max-width: 1160px)
                             font-size: 14px
@@ -47,17 +45,20 @@
                         @media (max-width: 768px)
                              max-width: none
                              margin: 0
+                             font-size: 12px
+                             font-weight: 400
                         
                 &__insideContainer 
                     border-radius: 20px 20px 0 0       
-                    background: #141414
+                    background: variables.$bg-black-80
                     margin-top:  65px
                     padding: 32px 50px 0
                     @media (max-width: 1160px)
                         margin-top: 41px
                         padding: 32px 38px 10px
                     @media (max-width: 768px)
-                        padding: 29px 23px 0 
+                        margin-top: 0px
+                        padding: 29px 0px 0 
                     &--topContainer 
                         display: flex
                         justify-content: space-between
@@ -70,12 +71,8 @@
 
                         &__left 
                             p.date 
-                                color: #5B5B5B
-                                font-size: 14.203px
-                                font-family: Milligram
-                                font-style: normal
-                                font-weight: 400
-                                line-height: 150%
+                                color: variables.$font-black-50
+                                @include mixin.text-M
                                 margin: 0
                                 margin-bottom: 12px
                                 @media (max-width: 1160px)
@@ -87,12 +84,8 @@
                                 align-items: flex-end
                                 gap: 13px
                                 h3 
-                                    color: #FFF
-                                    font-size: 44.977px
-                                    font-family: Milligram
-                                    font-style: normal
-                                    font-weight: 400
-                                    line-height: 100%
+                                    color: variables.$font-white
+                                    @include mixin.label-M
                                     margin: 0
                                     @media (max-width: 1160px)
                                     @media (max-width: 768px)
@@ -101,7 +94,7 @@
                                     display: flex
                                     align-items: center
                                     border-radius: 4.734px
-                                    background: #222
+                                    background: variables.$font-black-60
                                     padding: 0 8px
                                     gap: 5px
                                     margin-bottom: 5px
@@ -113,12 +106,8 @@
                                         @media (max-width: 768px)
                                             max-width: 5px
                                     p.procent 
-                                        color: #04FF87
-                                        font-size: 16.57px
-                                        font-family: Milligram
-                                        font-style: normal
-                                        font-weight: 400
-                                        line-height: 150%
+                                        color: variables.$font-green
+                                        @include mixin.text-L
                                         margin: 0 
                                         @media (max-width: 1160px)
                                         @media (max-width: 768px)
@@ -127,14 +116,10 @@
                             display: flex
                             gap: 20px
                             .box
-                                color: #5B5B5B
-                                font-size: 14.203px
-                                font-family: Milligram
-                                font-style: normal
-                                font-weight: 400
-                                line-height: 150%
-                                background: #1E1E1E
-                                border: 1px solid #1E1E1E
+                                color: variables.$font-black-50
+                                @include mixin.text-M
+                                background: variables.$bg-black-70
+                                border: 1px solid variables.$bg-black-70
                                 border-radius: 50px
                                 padding: 7px 10px    
                                 @media (max-width: 1160px)

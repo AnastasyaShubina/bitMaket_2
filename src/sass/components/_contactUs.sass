@@ -1,8 +1,8 @@
-@import '../variables'
-@import '../mixin'
+@use '../variables'
+@use '../mixin'
 
 .contactUs
-    background-color: $bg-black-90
+    background-color: #fff0
     &--container
         max-width: 1153px
         margin: auto
@@ -14,10 +14,10 @@
             flex-direction: column
             align-items: center
             border-radius: 8px
-            background: $bg-black-80
+            background: variables.$bg-black-80
             h2
-                @include label-M
-                color: $font-white
+                @include mixin.label-M
+                color: variables.$font-white
                 font-size: 42px
                 max-width: 350px
                 margin: 0
@@ -30,8 +30,8 @@
                     margin-top: 53px
             .contactUs
                 border-radius: 4px
-                border: 1px solid $bg-black
-                background-color: $bg-white
+                border: 1px solid variables.$bg-black
+                background-color: variables.$bg-white
                 padding: 0
                 cursor: pointer
                 z-index: 1
@@ -41,23 +41,23 @@
                 @media (max-width: 768px)
                     margin-bottom: 105px
                 p
-                    @include text-L
+                    @include mixin.text-L
                     padding: 20px 41px
-                    color: $font-black
+                    color: variables.$font-black
                     text-align: center
                     margin: 0
             .contactUs:hover
                 transition: 0.3s
                 border-color: currentColor
-                background-color: $bg-black
-                border: 1px solid $bg-white
+                background-color: variables.$bg-black
+                border: 1px solid variables.$bg-white
                 p
-                    color: $font-white
+                    color: variables.$font-white
             .contactUs:active
-                background-color: $bg-black
-                border: 1px solid $bg-black-30
+                background-color: variables.$bg-black
+                border: 1px solid variables.$bg-black-30
                 p
-                    color: $font-black-30
+                    color: variables.$font-black-30
             .imgCU
                 margin-top: -250px
                 width: 100%

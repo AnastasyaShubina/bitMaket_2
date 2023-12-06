@@ -1,8 +1,13 @@
+@use '../variables'
+@use '../mixin'
+
 .container
 .mainBlock
     max-width: 1153px
     margin: auto
     margin-top: 180px
+    @media (max-width: 768px)
+        margin-top: 60px
     &--BGimg
         .balls
             position: absolute
@@ -19,29 +24,25 @@
         align-items: center
         position: relative
         z-index: 1
+        padding: 0 36px
         &__text
             h1
                 max-width: 850px
-                color: #000
+                color: variables.$font-black
                 text-align: center
-                font-size: 54px
-                font-family: Milligram
-                font-weight: 500
+                @include mixin.label-L
                 line-height: 120%
                 margin: 46px 0 18px 0
                 @media (max-width: 1160px)
                 @media (max-width: 768px)
-                    font-size: 45px
-                    margin: 23px 0 28px 0
-                    max-width: 638px
+                    margin: 23px auto 16px
+                    max-width: 312px
             p
                 max-width: 470px
                 margin: auto
-                color: #717171
+                color: variables.$font-black-50
                 text-align: center
-                font-size: 12px
-                font-family: Milligram
-                line-height: 150%
+                @include mixin.text-S
                 margin-bottom: 51px
                 @media (max-width: 1160px)
                 @media (max-width: 768px)
@@ -59,15 +60,12 @@
                 margin-bottom: 76px
             p
                 padding: 18px 62px
-                color: #FFF
+                color: variables.$font-white
                 text-align: center
                 leading-trim: both
                 text-edge: cap
-                font-size: 14px
-                font-family: Milligram
-                font-weight: 500
-                line-height: 10px
                 margin: 0
+                @include mixin.text-M
                 @media (max-width: 1160px)
                 @media (max-width: 768px)
                     padding: 18px 51px
@@ -77,12 +75,12 @@
             //border-color: currentColor
             background-color: #2E2E2E
             p
-                color: #fff
+                color: variables.$font-white
         .contactUs:active
-            background-color: #fff
-            border: 1px solid #000
+            background-color: variables.$bg-white
+            border: 1px solid variables.$bg-black
             p
-                color: #000
+                color: variables.$font-black
         &__numbers
             width: 726px
             justify-content: space-between
@@ -102,17 +100,11 @@
                     max-width: fit-content
                 h3.numberStyle
                     color: #000
-                    font-size: 34px
-                    font-family: Milligram
-                    line-height: 100%
-                    font-weight: 400
+                    @include mixin.label-M
                     margin: 0
                 p.numberStyle2
-                    color: #5F5F5F
-                    font-size: 12px
-                    font-family: Milligram
-                    line-height: 130%
-                    font-weight: 400
+                    color: variables.$font-black-50
+                    @include mixin.text-M
                     margin: 0
     // &--img
     //     .bottomImg

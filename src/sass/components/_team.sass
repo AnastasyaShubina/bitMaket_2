@@ -1,22 +1,22 @@
+@use '../variables'
+@use '../mixin'
+
 .team
-    background-color: #101010
+    background-color: variables.$bg-black-90
     &--container
         max-width: 1153px
-        margin:  auto 
-        padding: 0px 20px 
+        margin: auto
+        padding: 0px 20px
 
         &__content
-            
-            h2 
-                color: #FFF
-                font-size: 42px
-                font-family: Milligram
-                font-weight: 500
-                line-height: 120%
+
+            h2
+                color: variables.$font-white
+                @include mixin.label-M
                 margin: 0
                 @media (max-width: 768px)
                     font-size: 36px
-            &--cards 
+            &--cards
                 margin-top: 67px
                 display: flex
                 flex-wrap: wrap
@@ -25,7 +25,7 @@
                 @media (max-width: 768px)
                     margin-top: 43px
                     gap: 75px 1px
-                &__card 
+                &__card
                     @media (max-width: 768px)
                         width: 100%
                     img
@@ -33,19 +33,11 @@
                         @media (max-width: 768px)
                             width: 100%
                             max-width: none
-                    h4 
-                        color: #FFF
-                        font-size: 16px
-                        font-family: Milligram
-                        font-style: normal
-                        font-weight: 500
-                        line-height: 120%
+                    h4
+                        color: variables.$font-white
+                        @include mixin.text-L
                         margin: 32px 0 7px
-                    p 
-                        color: #5F5F5F
-                        font-size: 12px
-                        font-family: Milligram
-                        font-style: normal
-                        font-weight: 400
-                        line-height: 120%
+                    p
+                        color: variables.$font-black-50
+                        @include mixin.text-S
                         margin: 0

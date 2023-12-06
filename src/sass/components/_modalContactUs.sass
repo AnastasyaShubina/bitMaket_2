@@ -1,21 +1,24 @@
+@use '../variables'
+@use '../mixin'
+
 .modalContactUs
     display: none
     &--bg
         z-index: 99
         opacity: 0.4000000059604645
-        background: #010101
+        background: variables.$bg-black-90
         width: 100vw
         height: 100vh
         position: fixed
     &--window
         border-radius: 40px
-        background: #000
+        background: variables.$bg-black
         padding: 61px 75px 88px
         max-width: 520px
         margin: auto
         z-index: 999
         position: fixed
-        margin-left: -302px
+        margin-left: -241.5px
         left: 50%
         top: 50%
         margin-top: -190px
@@ -44,23 +47,18 @@
             align-items: center
             gap: 60px
             h4
-                color: #FFF
+                color: variables.$font-white
                 text-align: center
-                font-size: 40px
-                font-family: Milligram
-                font-style: normal
-                font-weight: 500
-                line-height: 120%
+                @include mixin.label-M
                 margin: 0
             &--buttons
                 display: flex
                 gap: 12px
                 flex-direction: column
-
                 .joinOurTg
                     cursor: pointer
                     border-radius: 4px
-                    background: #FFF
+                    background: variables.$bg-white
                     display: flex
                     align-items: center
                     padding: 20px 32px
@@ -69,37 +67,26 @@
                     text-decoration: none
                     svg
                         path
-                            fill: #000
+                            fill: variables.$bg-black
                     svg
                     p
-                        color: #000
+                        color: variables.$font-black
                         text-align: center
-                        leading-trim: both
-                        text-edge: cap
-                        font-size: 14px
-                        font-family: Milligram
-                        font-style: normal
-                        font-weight: 500
+                        @include mixin.text-M
                         line-height: 10px
                         margin: 0
                 .ContactUsByEmail
                     border-radius: 4px
-                    border: 1px solid #FFF
-                    background-color: #000
+                    border: 1px solid variables.$bg-white
+                    background-color: variables.$bg-black
                     cursor: pointer
                     max-height: 50px
                     text-decoration: none
                     a
                         text-decoration: none
                     p
-                        color: #FFF
+                        color: variables.$font-white
                         text-align: center
-                        leading-trim: both
-                        text-edge: cap
-                        font-size: 14px
-                        font-family: Milligram
-                        font-style: normal
-                        font-weight: 500
-                        line-height: 10px
-                        padding: 20px 32px
+                        @include mixin.text-M
+                        padding: 15px 32px
                         margin: 0

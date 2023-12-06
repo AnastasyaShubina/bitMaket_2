@@ -1,3 +1,6 @@
+@use '../variables'
+@use '../mixin'
+
 .partnersWhite
     background-color: #fff0
     &--container
@@ -7,17 +10,15 @@
         @media (max-width: 768px)
             padding: 60px 20px
         &__content
+            position: relative
             h2
-                color: #000
-                font-size: 42px
-                font-family: Milligram
-                font-weight: 500
-                line-height: 120%
+                color: variables.$font-black
+                @include mixin.label-M
                 max-width: none
                 margin: auto
                 text-align: center
                 @media (max-width: 768px)
-                    font-size: 36px
+                    font-size: 32px
                     text-align: left
 
             &--imgs
@@ -25,7 +26,7 @@
                 display: flex
                 flex-direction: column
                 border-radius: 20px
-                border: 1px solid #CFCFCF
+                border: 1px solid variables.$bg-black-30
                 padding: 65px 55px 0
                 @media (max-width: 1160px)
                     padding: 38px 25px 17px 25px
@@ -33,7 +34,7 @@
                     padding: 38px 25px 0
                 &__logo
                     border-radius: 20px
-                    border: 1px solid #CFCFCF
+                    border: 1px solid variables.$bg-black-30
                     width: 100%
                     text-align: center
                     padding: 19px 0 15px

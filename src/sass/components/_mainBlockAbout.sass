@@ -1,6 +1,8 @@
+@use '../variables'
+@use '../mixin'
+
 .container
 .mainBlockAbout
-    // max-width: 1153px
     margin: auto
     &--container
         display: flex
@@ -17,29 +19,25 @@
         &__text
             h1
                 max-width: 782px
-                color: #fff
+                color: variables.$font-white
                 text-align: center
-                font-size: 72px
-                font-family: Milligram
-                font-weight: 500
-                line-height: 120%
+                @include mixin.label-XL
                 margin: 116px 0 18px 0
                 @media (max-width: 1160px)
                     margin: 106px 0 28px 0
                     max-width: 638px
                 @media (max-width: 768px)
-                    font-size: 44px
+                    font-size: 34px
                     max-width: 312px
-                    margin: 106px auto 28px auto
+                    margin: 112px auto 15px auto
             p
                 max-width: 656px
                 margin: auto
-                color: #717171
+                color: variables.$font-black-40
                 text-align: center
-                font-size: 14px
-                font-family: Milligram
-                line-height: 150%
+                @include mixin.text-M
                 margin-bottom: 63px
+                font-weight: 400
                 @media (max-width: 1160px)
                     margin-bottom: 72px
                 @media (max-width: 768px)
@@ -51,49 +49,50 @@
             justify-content: center
             align-items: center
             border-radius: 12px
-            background: #fff
+            background: variables.$bg-white
             margin-bottom: 88px
             cursor: pointer
+            border: none
             @media (max-width: 768px)
                 margin-bottom: 76px
             p
-                padding: 18px 62px
-                color: #000
+                padding: 20px 62px
+                color: variables.$font-black
                 text-align: center
                 leading-trim: both
                 text-edge: cap
-                font-size: 14px
-                font-family: Milligram
-                font-weight: 500
+                @include mixin.text-L
                 line-height: 10px
                 margin: 0
                 @media (max-width: 768px)
-                    padding: 18px 51px
+                    padding: 20px 45px
         .tryDemo:hover
             transition: 0.3s
         .tryDemo:focus
             //border-color: currentColor
-            background-color: #2E2E2E
+            background-color: variables.$bg-black-60
             p
-                color: #fff
+                color: variables.$font-white
         .contactUs:active
-            background-color: #000
-            border: 1px solid #fff
+            background-color: variables.$bg-black
+            border: 1px solid variables.$bg-white
             p
-                color: #fff
+                color: variables.$font-white
         &__img
             z-index: -2
             position: relative
             top: -400px
-            // margin-top: -300px
             @media (max-width: 1160px)
                 margin-top: -260px
                 width: 100%
             @media (max-width: 768px)
-                margin-top: -100px
-                margin-bottom: 100px
+                margin-top: -220px
+                margin-bottom: 0px
                 width: 100%
-            img
+                top: 0
+            &--img
+                img
+                    width: 100%
                 @media (max-width: 1160px)
                     width: 100%
                 @media (max-width: 768px)

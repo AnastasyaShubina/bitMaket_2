@@ -1,21 +1,24 @@
+@use '../variables'
+@use '../mixin'
+
 .blackHead
     .headerWhite
         &--container
             &__logo
                 svg
                     >path
-                        fill: #fff
+                        fill: variables.$bg-white
             &__menu
                 a
-                    color: #fff
+                    color: variables.$font-white
             &__menuMobile
                 svg
                     path
-                        fill: #fff
+                        fill: variables.$bg-white
             .contactUs
-                border: 1px solid #fff
+                border: 1px solid variables.$font-white
                 p
-                    color: #fff
+                    color: variables.$font-white
 
 .headerWhite
     position: fixed
@@ -26,7 +29,7 @@
     background: linear-gradient(180deg, rgba(204, 204, 204, 0.10) 0%, rgba(204, 204, 204, 0.01) 100%)
     &--container
         max-width: 1153px
-        padding: 20px 0
+        padding: 15px 0
         display: flex
         margin: auto
         justify-content: space-between
@@ -34,8 +37,8 @@
             padding: 20px 25px
         @media (max-width: 768px)
             margin: 0px
-
         &__logo
+            margin: auto 0
             .headerWhite--container__logo--img
         &__menu
             display: flex
@@ -44,39 +47,35 @@
             @media (max-width: 768px)
                 display: none
             a
-                color: #000
+                color: variables.$font-black
                 text-align: center
-                font-size: 14px
-                font-family: 'Milligram'
-                font-weight: 500
+                @include mixin.text-M
                 text-decoration: none
             .contactUs
                 border-radius: 4px
-                border: 1px solid #000
+                border: 1px solid variables.$bg-black
                 background-color: #ffffff00
                 padding: 0
                 cursor: pointer
                 p
                     padding: 16px 26px
-                    color: #000
+                    color: variables.$font-black
                     text-align: center
-                    font-size: 14px
-                    font-family: 'Milligram'
-                    font-weight: 500
+                    @include mixin.text-M
                     margin: 0
                 .contactUs:hover
                     transition: 0.3s
-                    background-color: #fff
+                    background-color: variables.$bg-white
                     p
-                        color: #000
+                        color: variables.$bg-black
 
                 .contactUs:focus
                     border-color: currentColor
-                    background-color: #fff
+                    background-color: variables.$bg-white
                     p
-                        color: #000
+                        color: variables.$bg-black
                 .contactUs:active
-                    background-color: #fff
+                    background-color: variables.$bg-white
         &__menuMobile
             display: none
             @media (max-width: 1160px)
@@ -103,35 +102,31 @@
             @media (max-width: 768px)
                 display: none
             a
-                color: #fff
+                color: variables.$font-white
                 text-align: center
-                font-size: 14px
-                font-family: 'Milligram'
-                font-weight: 500
+                @include mixin.text-M
                 text-decoration: none
             .contactUs
                 border-radius: 4px
-                border: 1px solid #fff
+                border: 1px solid variables.$bg-white
                 background-color: #ffffff00
                 padding: 0
                 cursor: pointer
                 p
                     padding: 16px 26px
-                    color: #fff
+                    color: variables.$font-white
                     text-align: center
-                    font-size: 14px
-                    font-family: 'Milligram'
-                    font-weight: 500
+                    @include mixin.text-M
                     margin: 0
                 .contactUs:hover
                     transition: 0.3s
                 .contactUs:focus
                     border-color: currentColor
-                    background-color: #fff
+                    background-color: variables.$bg-white
                     p
-                        color: #fff
+                        color: variables.$font-white
                 .contactUs:active
-                    background-color: #fff
+                    background-color: variables.$bg-white
         &__menuMobile
             display: none
             @media (max-width: 1160px)

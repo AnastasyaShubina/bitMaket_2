@@ -1,8 +1,10 @@
+@use '../variables'
+@use '../mixin'
+
 .footer
-    background-color: #000
+    background-color: #fff0
     position: absolute
     width: 100%
-    bottom: 0
     &--container
         max-width: 1153px
         margin: auto
@@ -30,64 +32,62 @@
                 cursor: pointer
                 svg
                     path
-                        fill: #fff
+                        fill: variables.$bg-white
                 &:hover
                     svg
                         path
-                            fill: #00E3E3
+                            fill: variables.$bg-green
                             transition: 0.3s
                     .textTg
-                        color: #00E3E3
+                        color: variables.$bg-green
                         transition: 0.3s
                 .textTg
-                    color: #FFF
+                    color: variables.$font-white
                     text-align: center
-                    font-size: 14px
-                    font-family: Milligram
-                    font-style: normal
-                    font-weight: 500
-                    line-height: normal
+                    @include mixin.text-L
                     transition: 0.3s
 
             .textMail
-                color: #FFF
+                color: variables.$font-white
                 text-align: right
-                font-size: 14px
-                font-family: Milligram
-                font-style: normal
-                font-weight: 500
-                line-height: normal
+                @include mixin.text-L
                 text-decoration: none
                 transition: 0.3s
             .textMail:hover
                 transition: 0.3s
-                color: #00E3E3
+                color: variables.$font-green
             .textMail:focus
-                color: #00E3E3
+                color: variables.$font-green
             .textMail:active
-                color: #00E3E3
+                color: variables.$font-green
         &__policy
             display: flex
             justify-content: space-between
             width: 100%
             margin-bottom: 22px
+            @media (max-width: 768px)
+                flex-direction: column-reverse
+                justify-content: center
+                text-align: center
+                gap: 16px
             p
                 margin: 0
-                color: #5F5F5F
-                font-family: Milligram
-                font-size: 16px
-                font-style: normal
-                font-weight: 300
-                line-height: normal
+                color: variables.$font-black-50
+                @include mixin.text-L
+                font-weight: 400
             &--menu
                 margin: auto 0
                 display: flex
                 gap: 18px
                 a
-                    color: #5F5F5F
-                    font-family: Milligram
-                    font-size: 16px
-                    font-style: normal
-                    font-weight: 300
-                    line-height: normal
+                    color: variables.$font-black-50
+                    @include mixin.text-L
                     text-decoration: none
+                    font-weight: 400
+                @media (max-width: 768px)
+                    justify-content: center
+
+.grey
+    background: variables.$bg-black-90
+    .footer
+        background: variables.$bg-black-90

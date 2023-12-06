@@ -1,11 +1,22 @@
+@use '../variables'
+@use '../mixin'
+
+.containerMainBlock
+    position: fixed
+    top: 0
+    z-index: -1
 
 .firstBlock
-    background-color: #000
+    background-color: variables.$bg-black
+    border-radius: 80px 80px 0 0
+    position: relative
+    top: -10px
+
     @media (max-width: 768px)
         position: relative
     &--container
         max-width: 1153px
-        margin: -20px auto
+        margin: -0px auto
         padding: 128px 20px
         @media (max-width: 768px)
             padding: 94px 20px 0 20px
@@ -17,31 +28,23 @@
                 flex-direction: column
                 align-items: flex-start
             h2
-                color: #FFF
-                font-size: 42px
-                font-family: Milligram
-                font-weight: 500
-                line-height: 120%
+                color: variables.$font-white
+                @include mixin.label-M
                 max-width: 360px
                 margin: 0
                 @media (max-width: 768px)
                     max-width: 315px
-                    font-size: 36px
-
             p
-                color: #A0A0A0
-                font-size: 20px
-                font-family: Milligram
-                line-height: 150%
+                color: variables.$font-black-30
+                @include mixin.text-XL
                 max-width: 323px
                 @media (max-width: 768px)
-                    margin-top: 25px
-                    font-size: 18px
+                    margin-top: 8px
 
         &__schedule
             margin-top: 60px
             border-radius: 8px
-            background: #141414
+            background: variables.$bg-black-80
             display: flex
             padding: 17px
             gap: 26px
@@ -72,16 +75,23 @@
                 @media (max-width: 768px)
                     flex-direction: column
                 &__bgButtons.active
-                    background: linear-gradient(208deg, #1A1919 0%, #161616 100%)
+                    background: variables.$bg-black-70
+                    border: 1px solid variables.$bg-black-60
                     .Mark-up
-                        background-color: #0FFBE4
+                        background-color: variables.$bg-green
+                        p
+                            color: variables.$font-black
                     .Accumulation
-                        background-color: #FF7A00
+                        background-color: variables.$bg-yellow
+                        p
+                            color: variables.$font-black
                     .Mark-down
-                        background-color: #FF3628
+                        background-color: variables.$bg-red
+                        p
+                            color: variables.$font-black
                 &__bgButtons
                     border-radius: 8px
-                    border: 2px solid #1A1A1A
+                    border: 2px solid variables.$bg-black-70
                     padding: 58px 46px
                     cursor: pointer
                     @media (max-width: 1185px)
@@ -96,7 +106,7 @@
                         width: 183px
                         height: 54px
                         border-radius: 12px
-                        background: #1A1A1A
+                        background: variables.$bg-black-70
                         padding: 0
                         border: none
                         font: inherit
@@ -106,27 +116,12 @@
                         @media (max-width: 768px)
                             width: 140px
                         p
-                            color: #000
                             text-align: center
-                            font-size: 16px
-                            font-family: Milligram
-                            font-weight: 500
-                            line-height: 10px
-                            color: #fff
+                            @include mixin.text-L
+                            color: variables.$font-white
                     .Mark-up:hover
                         border-color: currentColor
-                        border: 1px solid #0FFBE4
-                    // .Mark-up:focus
-                    //     background-color: #0FFBE4
-                    //     // background: linear-gradient(208deg, #1A1919 0%, #161616 100%)
-                    //     p
-                    //         color: #fff
-                    // .Mark-up:active
-                    //     border-color: currentColor
-                    //     background-color: #0FFBE4
-                    //     box-shadow: 0px 4px 34px 0px rgba(13, 202, 184, 0.20)
-
-                        // background-color: #2E2E2E
+                        border: 1px solid variables.$bg-green
                     .Mark-up:hover:active:before
                         filter: blur(10px)
 
@@ -135,7 +130,7 @@
                         width: 183px
                         height: 54px
                         border-radius: 12px
-                        background: #1A1A1A
+                        background: variables.$bg-black-70
                         padding: 0
                         border: none
                         font: inherit
@@ -145,24 +140,12 @@
                         @media (max-width: 768px)
                             width: 140px
                         p
-                            color: #000
                             text-align: center
-                            font-size: 16px
-                            font-family: Milligram
-                            font-weight: 500
-                            line-height: 10px
-                            color: #fff
+                            @include mixin.text-L
+                            color: variables.$font-white
                     .Accumulation:hover
                         border-color: currentColor
-                        border: 1px solid #FF7A00
-                    // .Accumulation:focus
-                    //     background-color: #FF7A00
-                    // .Accumulation:active
-                    //     border-color: currentColor
-                    //     background-color: #FF7A00
-                    //     box-shadow: 0px 4px 34px 0px rgba(13, 202, 184, 0.20)
-
-                            // background-color: #2E2E2E
+                        border: 1px solid variables.$bg-yellow
                     .Accumulation:hover:active:before
                         filter: blur(10px)
                 &__bgButtons
@@ -175,7 +158,7 @@
                         width: 183px
                         height: 54px
                         border-radius: 12px
-                        background: #1A1A1A
+                        background: variables.$bg-black-70
                         padding: 0
                         border: none
                         font: inherit
@@ -185,24 +168,12 @@
                         @media (max-width: 768px)
                             height: 46px
                         p
-                            color: #000
                             text-align: center
-                            font-size: 16px
-                            font-family: Milligram
-                            font-weight: 500
-                            line-height: 10px
-                            color: #fff
+                            @include mixin.text-L
+                            color: variables.$font-white
                     .Mark-down:hover
                         border-color: currentColor
-                        border: 1px solid #FF3628
-                    // .Mark-down:focus
-                    //     background-color: #FF3628
-                    // .Mark-down:active
-                    //     border-color: currentColor
-                    //     background-color: #FF3628
-                    //     box-shadow: 0px 4px 34px 0px rgba(13, 202, 184, 0.20)
-
-                            // background-color: #2E2E2E
+                        border: 1px solid variables.$bg-red
                     .Mark-down:hover:active:before
                         filter: blur(10px)
 
@@ -210,20 +181,20 @@
             display: flex
             justify-content: space-between
             margin-top: 46px
-            align-items: center
             @media (max-width: 768px)
                 flex-direction: column
+                margin-top: 20px
+                padding-bottom: 60px
             p
-                color: #676767
-                font-size: 14px
-                font-family: Milligram
-                line-height: 160%
+                color: variables.$font-black-50
+                @include mixin.text-M
+                font-weight: 400
                 max-width: 564px
                 @media (max-width: 768px)
 
             .tryDemo
                 border-radius: 12px
-                border: 1px solid #FFF
+                border: 1px solid variables.$bg-white
                 background-color: transparent
                 padding: 0
                 margin: 0
@@ -233,23 +204,20 @@
                 @media (max-width: 768px)
                     width: 100%
                 p
-                    color: #FFF
+                    color: variables.$font-white
                     text-align: center
-                    font-size: 16px
-                    font-family: Milligram
-                    font-weight: 500
-                    line-height: 10px
+                    @include mixin.text-L
                     margin: 0
                     padding: 20px 40px
             .tryDemo:hover
                 transition: 0.3s
             .tryDemo:focus
                 border-color: currentColor
-                background-color: #fff
+                background-color: variables.$bg-white
                 p
-                    color: #000
+                    color: variables.$font-black
             .tryDemo:active
                 border-color: currentColor
-                background-color: #E2E2E2
+                background-color: variables.$bg-white
                 p
-                    color: #000
+                    color: variables.$font-black

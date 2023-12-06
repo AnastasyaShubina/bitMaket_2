@@ -12,15 +12,17 @@ html.no-js(lang='en')
     //- Header 
     include ../includes/modalContactUs.pug
     include ../includes/headerWhite.pug
-    include ../includes/mainBlock.pug
-    include ../includes/mainBlockImg.pug
-    .change-black-element
+    .containerMainBlock
+      include ../includes/mainBlock.pug
+      include ../includes/mainBlockImg.pug
+    .change-black-element.slideAnimation
       include ../includes/firstBlock.pug
       include ../includes/secondBlock.pug
       include ../includes/partners.pug
       //- include ../includes/team.pug
-      include ../includes/contactUs.pug
-      include ../includes/footer.pug
+      .grey
+        include ../includes/contactUs.pug
+        include ../includes/footer.pug
       include ../includes/modal.pug
 
 <script src="https://unpkg.com/d3-time-format@4.1.0/dist/d3-time-format.min.js"></script>
